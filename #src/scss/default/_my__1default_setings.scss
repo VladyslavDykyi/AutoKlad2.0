@@ -265,14 +265,14 @@ button:disabled {
 		@media screen and (max-width: 650px) {
 			flex-direction: column;
 		}
-		& .container-titls:nth-child(n + 4) .content{
-			right: 0;
-			@media screen and (max-width: 1024px) {
-				right: calc(50% - 150px);
-			}
-		}
+		//& container_selections .container-titls:nth-child(n + 4) .content{
+		//	right: 0;
+		//	@media screen and (max-width: 1024px) {
+		//		right: calc(50% - 150px);
+		//	}
+		//}
 		& div {
-			@media screen and (max-width: 580px) {
+			@media screen and (max-width: 650px) {
 				width: 100%;
 			}
 		}

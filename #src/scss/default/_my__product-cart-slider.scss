@@ -25,13 +25,13 @@
 	}
 }
 .tovar-nav {
+	& div div div.slick-active div div div.tovar-nav__wrap-img {
+		border: 1px solid transparent;
+	}
 	& div div div.slick-current div div div.tovar-nav__wrap-img {
 		border: 1px solid #307fdd;
 		box-sizing: border-box;
 		box-shadow: 0 2px 5px rgba(51, 51, 51, 0.25);
-	}
-	& div div div.slick-active div div div.tovar-nav__wrap-img {
-		border: 1px solid transparent;
 	}
 }
 .tovar-nav__wrap-img img {
