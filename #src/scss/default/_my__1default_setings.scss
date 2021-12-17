@@ -1,0 +1,281 @@
+$white: #fff;
+$lite-greey: #f6f6f6;
+$small-greey: #939393;
+$smale-grey: #E9E9E9;
+$greey: #777;
+$dark-green: #333;
+$black: #000;
+$black2: #131313;
+$lite-blue: #00acde;
+$blue: #008bcc;
+$blue-text: #017cc2;
+$green: #3bb878;
+$red: #ff0000;
+$yeallow: #fab73d;
+$orange: #F2994A;
+
+$R-b: "Roboto-Bold";
+$R-m: "Roboto-Medium";
+$R-r: "Roboto-Regular";
+/*---цвета ---*/
+input,
+a,
+button {
+	transition: all 0.2s linear;
+}
+
+button {
+	cursor: pointer;
+	padding: 0;
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+.icon-red:before {
+	color: $red;
+}
+a {
+	text-decoration: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+textarea {
+	resize: none;
+}
+
+figure {
+	& figcaption {
+		display: none;
+	}
+}
+
+body.lock {
+	overflow: hidden;
+}
+
+i {
+	transition: all 0.2s linear;
+	
+	&::before {
+		transition: all 0.2s linear;
+	}
+}
+
+.none {
+	opacity: 0.3;
+}
+
+label {
+	position: relative;
+}
+
+button:disabled {
+	background-color: $greey;
+}
+
+.starRed::after {
+	content: "*";
+	position: absolute;
+	display: block;
+	width: 5px;
+	height: 5px;
+	top: -2px;
+	right: -7px;
+	color: $red;
+}
+
+/*---контейнер сайта ---*/
+.container {
+	position: relative;
+	max-width: 1180px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+	@media screen and (max-width: 1024px) {
+		max-width: 768px;
+		padding: 0 15px;
+	}
+	@media screen and (max-width: 768px) {
+		max-width: 100%;
+		padding: 0 10px;
+	}
+}
+
+/*---контейнер сайта ---*/
+
+.bg-site {
+	background-color: $white;
+	padding: 150px 0 0;
+	box-sizing: border-box;
+	@media screen and (max-width: 1024px) {
+		padding: 120px 0 0;
+	}
+}
+
+.sity {
+	padding: 0;
+	outline: none;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	box-sizing: border-box;
+	
+	&:hover {
+		& .icon-geo::before {
+			color: $lite-blue;
+		}
+		
+		& .sity__text {
+			color: $lite-blue;
+			border-color: $lite-blue;
+		}
+	}
+	
+	&__text {
+		border-bottom: 1px dotted $blue-text;
+		transition: all 0.2s linear;
+	}
+}
+
+.comparison {
+	.text-r-greey {
+		transition: all 0.2s linear;
+	}
+	
+	&:hover {
+		i:before {
+			color: $lite-blue;
+		}
+		
+		.text-r-greey {
+			color: $lite-blue;
+		}
+	}
+}
+
+.box__soc {
+	display: flex;
+	align-items: center;
+	
+	& .item {
+		margin-right: 20px;
+		
+		& a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			width: 30px;
+			height: 30px;
+			background-color: $white;
+			
+			&:hover {
+				background-color: #00acde;
+			}
+			
+			&:hover i::before {
+				color: $white;
+			}
+			
+			& i::before {
+				color: $blue;
+				font-size: 18px;
+				transition: all 0.2s linear;
+			}
+		}
+	}
+}
+
+.checkout {
+	@media screen and (max-width: 450px) {
+		input {
+			width: 100%;
+		}
+		.js-example-basic-single {
+			width: 100%;
+		}
+		.select2 {
+			width: 100% !important;
+		}
+	}
+}
+.drop-search {
+	position: absolute;
+	left: 0;
+	top: 40px;
+	z-index: 50;
+	background: $white;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid $greey;
+	box-sizing: border-box;
+	border-top: 1px solid transparent;
+	
+	&-list {
+		& .search-lis-item {
+			margin-bottom: 5px;
+			& .search-lis-link {
+				display: flex;
+				align-items: center;
+				& .lis-item-box:first-child {
+					margin-right: 5px;
+				}
+				& .lis-item-box:nth-child(2) {
+					flex: 1 1 auto;
+					margin-top: 9px;
+					border-bottom: 1px dashed $greey;
+				}
+				& .lis-item-box:last-child {
+					margin-left: 5px;
+				}
+			}
+		}
+	}
+}
+.select-auto {
+	margin: 50px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	grid-gap: 20px;
+	width: 63%;
+	@media screen and (max-width: 850px) {
+		width: 55%;
+	}
+	@media screen and (max-width: 650px) {
+		width: 50%;
+		flex-direction: column;
+		width: auto;
+	}
+	& .popUp-form__marckers {
+		margin: 0;
+		align-items: center;
+		flex-wrap: wrap;
+		grid-gap: 20px;
+		@media screen and (max-width: 650px) {
+			flex-direction: column;
+		}
+		& .container-titls:nth-child(n + 4) .content{
+			right: 0;
+			@media screen and (max-width: 1024px) {
+				right: calc(50% - 150px);
+			}
+		}
+		& div {
+			@media screen and (max-width: 580px) {
+				width: 100%;
+			}
+		}
+	}
+}
+

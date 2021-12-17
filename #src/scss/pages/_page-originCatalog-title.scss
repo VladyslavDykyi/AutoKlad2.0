@@ -1,0 +1,8 @@
+.origin-title {
+	margin-bottom: 30px;
+	& div a {
+		&:hover {
+			color: $lite-blue;
+		}
+	}
+}

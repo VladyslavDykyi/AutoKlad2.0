@@ -1,0 +1,53 @@
+.container-checkout {
+	& .pl {
+		padding: 0px 0px 35px 30px;
+		border-bottom: 1px solid $greey;
+		margin-bottom: 30px;
+		@media screen and (max-width: 1024px) {
+			padding: 0px 0px 35px 0px;
+		}
+		& .box-examination {
+			display: flex;
+			align-items: center;
+			@media screen and (max-width: 1024px) {
+				flex-wrap: wrap;
+			}
+			&-checkbox {
+				margin-top: 20px;
+				width: 41%;
+				display: flex;
+				flex-direction: column;
+				padding-right: 100px;
+				box-sizing: border-box;
+				@media screen and (max-width: 1024px) {
+					width: 100%;
+					margin-bottom: 20px;
+				}
+				@media screen and (max-width: 580px) {
+					padding-right: 0px;
+				}
+				& .check:first-child {
+					margin-bottom: 10px;
+				}
+			}
+			&-text {
+				margin: -20px 20px 0px 0px;
+				width: 59%;
+				padding: 20px 25px 20px 30px;
+				background-color: $blue;
+				box-sizing: border-box;
+				@media screen and (max-width: 1024px) {
+					width: 100%;
+					margin: 0px;
+				}
+				& p {
+					font-family: $R-r;
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 22px;
+					color: $white;
+				}
+			}
+		}
+	}
+}

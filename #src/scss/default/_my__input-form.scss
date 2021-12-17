@@ -1,0 +1,78 @@
+.inputForm {
+	border: 1px solid $greey;
+	padding: 10px 15px;
+	border-radius: 0px;
+	-webkit-appearance: none;
+	box-sizing: border-box;
+	background-color: $white;
+	outline: none;
+	width: 100%;
+	height: 40px;
+	font-family: $R-r;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: $greey;
+	@media screen and (max-width: 580px) {
+		padding: 10px;
+	}
+	&::placeholder {
+		font-family: $R-r;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
+		color: $greey;
+	}
+	&:hover {
+		border: 1px solid $blue;
+	}
+	&:focus {
+		border: 1px solid $blue;
+	}
+	&-xxs {
+		width: 90px;
+	}
+	&-w160 {
+		width: 160px;
+	}
+	&-w200 {
+		width: 200px;
+	}
+	&-xl {
+		width: 260px;
+	}
+	&-w320 {
+		width: 320px;
+	}
+}
+.text-area {
+	background: $white;
+	border: 1px solid $greey;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+	margin: 15px 0px;
+	box-sizing: border-box;
+	font-family: $R-r;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: $greey;
+	&:active {
+		outline: none;
+	}
+	&::placeholder {
+		font-family: $R-r;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		color: $greey;
+	}
+	&:hover {
+		border: 1px solid $blue;
+	}
+	&:focus {
+		border: 1px solid $blue;
+	}
+}

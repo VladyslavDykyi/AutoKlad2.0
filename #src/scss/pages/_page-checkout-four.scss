@@ -1,0 +1,33 @@
+.container-checkout {
+	& .box-pay {
+		display: flex;
+		align-items: center;
+		margin-top: 25px;
+		padding-bottom: 35px;
+		border-bottom: 1px solid $greey;
+		margin-bottom: 30px;
+		@media screen and (max-width: 768px) {
+			flex-wrap: wrap;
+		}
+		& .js-example-basic-single2 {
+			width: 360px;
+		}
+		& .select2 {
+			margin-right: 130px;
+			@media screen and (max-width: 768px) {
+				margin-right: 0px;
+				margin-bottom: 15px;
+				width: 360px !important;
+			}
+			@media screen and (max-width: 580px) {
+				width: 100% !important;
+			}
+		}
+		& div {
+			width: 100%;
+		}
+		& label {
+			margin-right: 15px;
+		}
+	}
+}

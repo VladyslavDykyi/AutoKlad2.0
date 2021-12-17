@@ -1,0 +1,123 @@
+.about {
+	& .my-dots {
+		top: 95%;
+	}
+}
+.about-company {
+	display: grid;
+	grid-template-areas:
+		"header1 header1"
+		"text1 schedule1"
+		"contact1 contact1";
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px 30px;
+	@media screen and (max-width: 1024px) {
+		grid-template-areas:
+			"header1"
+			"text1"
+			"schedule1"
+			"contact1";
+		grid-template-columns: 1fr;
+	}
+	&__title {
+		grid-area: header1;
+	}
+	&__text {
+		grid-area: text1;
+		& p {
+			font-family: $R-r;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+			color: $dark-green;
+			& a {
+				font-family: $R-r;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 24px;
+				color: $blue-text;
+				cursor: pointer;
+				text-decoration: underline;
+				text-decoration-style: dotted;
+				&:hover {
+					color: $lite-blue;
+				}
+			}
+		}
+		& p:last-child {
+			margin-top: 30px;
+		}
+		& h3 {
+			font-family: $R-m;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			color: $dark-green;
+			margin: 20px 0px;
+		}
+	}
+	&__schedule {
+		grid-area: schedule1;
+		&-box {
+			margin-top: 70px;
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			& .icon-time::before {
+				color: $blue;
+				font-size: 75px;
+				margin-right: 35px;
+			}
+			& .text-m {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	&__contact {
+		grid-area: contact1;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		margin: 50px 0px 70px;
+		@media screen and (max-width: 1024px) {
+			flex-wrap: wrap;
+		}
+		@media screen and (max-width: 580px) {
+			flex-direction: column;
+			align-items: center;
+		}
+		&-box {
+			@media screen and (max-width: 1024px) {
+				margin-bottom: 20px;
+			}
+			&__item {
+				& .link {
+					display: inline-flex;
+					align-items: center;
+					&:hover {
+						color: $blue-text;
+					}
+					&:hover i::before {
+						color: $blue-text;
+					}
+					&:focus {
+						color: $lite-blue;
+					}
+					&:focus i::before {
+						color: $lite-blue;
+					}
+					& i::before {
+						margin-right: 10px;
+					}
+				}
+			}
+			& .about-company__contact-box__item:first-child {
+				margin-bottom: 35px;
+				@media screen and (max-width: 768px) {
+					margin-bottom: 10px;
+					text-align: center;
+				}
+			}
+		}
+	}
+}

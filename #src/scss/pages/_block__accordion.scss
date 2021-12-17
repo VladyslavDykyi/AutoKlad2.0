@@ -1,0 +1,204 @@
+.delivery {
+	&-head {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 10px;
+		@media screen and (max-width: 768px) {
+			margin-bottom: 0px;
+		}
+		&__title {
+			@media screen and (max-width: 768px) {
+				width: 100%;
+				padding-bottom: 10px;
+				border-bottom: 1px solid $small-greey;
+				box-sizing: border-box;
+				@media screen and (max-width: 768px) {
+					margin: 10px 0 0;
+				}
+			}
+		}
+		& div.params {
+			& .items-box {
+				margin-bottom: 45px;
+				@media screen and (max-width: 768px) {
+					margin-bottom: 0;
+				}
+				&__item {
+					padding: 7px 0;
+					border-bottom: 1px solid $small-greey;
+					box-sizing: border-box;
+					& .pointer:hover::after {
+						border-color: $blue-text;
+					}
+					& .content__non {
+						padding: 10px 42px 0 0;
+						box-sizing: border-box;
+						@media screen and (max-width: 1280px) {
+							padding: 10px 30px 0 0;
+						}
+						@media screen and (max-width: 1024px) {
+							padding: 10px 0 0 0;
+						}
+						&-box__text {
+							display: flex;
+							align-items: center;
+							margin-top: 20px;
+							& .icon-danger::before {
+								font-size: 24px;
+								margin-right: 15px;
+							}
+							& .text-r {
+								line-height: 14px;
+							}
+						}
+						&-container {
+							margin-top: 10px;
+							&__item {
+								display: flex;
+								align-items: center;
+								margin: 7px 0px;
+								& .text-r {
+									font-size: 13px;
+								}
+								& img {
+									width: 12px;
+									margin-right: 10px;
+								}
+								& .icon-nova-poshta::before {
+									margin-right: 10px;
+									@media screen and (max-width: 1024px) {
+										margin-right: 2px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&__item {
+		& .items-box {
+			margin-bottom: 45px;
+			&__item {
+				padding: 7px 0px;
+				border-bottom: 1px solid $small-greey;
+				box-sizing: border-box;
+				& .content__non {
+					padding: 10px 50px 0px 0px;
+					box-sizing: border-box;
+					@media screen and (max-width: 1280px) {
+						padding: 10px 30px 0 0;
+					}
+					@media screen and (max-width: 1024px) {
+						padding: 10px 0px 0 0;
+					}
+					&-box__text {
+						display: flex;
+						align-items: center;
+						margin-top: 20px;
+						& .icon-danger::before {
+							font-size: 24px;
+							margin-right: 15px;
+						}
+						& .text-r {
+							line-height: 14px;
+						}
+					}
+					&-container {
+						margin-top: 10px;
+						&__item {
+							display: flex;
+							align-items: center;
+							margin: 7px 0px;
+							& img {
+								width: 12px;
+								margin-right: 10px;
+							}
+							& .icon-nova-poshta::before {
+								margin-right: 10px;
+								@media screen and (max-width: 1024px) {
+									margin-right: 2px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		&-box {
+			& .box__item {
+				display: flex;
+				flex-wrap: wrap;
+				margin-bottom: 40px;
+				@media screen and (max-width: 768px) {
+					margin-bottom: 0px;
+					border-bottom: 1px solid $small-greey;
+					box-sizing: border-box;
+				}
+				& .title {
+					font-family: $R-r;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 22px;
+					color: $blue-text;
+					width: 100%;
+					margin-bottom: 10px;
+					@media screen and (max-width: 768px) {
+						margin: 10px 0px;
+					}
+				}
+				@media screen and (max-width: 768px) {
+					& .click-AC {
+						position: relative;
+						&.active::after {
+							transform: rotate(135deg);
+						}
+						&::after {
+							content: "";
+							position: absolute;
+							top: 30%;
+							right: 1%;
+							transform: rotate(-45deg);
+							border-bottom: 2px solid $blue;
+							border-left: 2px solid $blue;
+							box-sizing: border-box;
+							width: 10px;
+							height: 10px;
+							display: block;
+							margin-left: 50px;
+							transition: all 0.2s linear;
+						}
+					}
+				}
+				& .params {
+					font-family: $R-r;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 22px;
+					color: $dark-green;
+					width: 80%;
+					& li {
+						display: flex;
+						align-items: center;
+						& .img {
+							display: flex;
+							align-items: center;
+							width: 25px;
+							height: 25px;
+							margin-left: 20px;
+							& picture {
+								width: 25px;
+								height: 25px;
+								margin-right: 10px;
+							}
+						}
+					}
+				}
+			}
+			& .box__item:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,94 @@
+.container-comment {
+	display: flex;
+	align-items: center;
+	padding-bottom: 35px;
+	border-bottom: 1px solid $greey;
+	margin-bottom: 20px;
+	@media screen and (max-width: 1024px) {
+		flex-wrap: wrap;
+	}
+	& .box-comment {
+		display: flex;
+		align-items: center;
+		width: 406px;
+		@media screen and (max-width: 580px) {
+			width: 100%;
+		}
+		&-text {
+			@media screen and (max-width: 580px) {
+				width: 100%;
+			}
+			& .text-area {
+				margin: 23px 0 0 0;
+				width: 360px;
+				height: 175px;
+				@media screen and (max-width: 580px) {
+					width: 100%;
+				}
+			}
+		}
+	}
+	& .box-attention {
+		width: 57.55%;
+		display: flex;
+		@media screen and (max-width: 1024px) {
+			margin-top: 15px;
+			width: 100%;
+		}
+		& .attention-figure {
+			padding-right: 30px;
+			@media screen and (max-width: 580px) {
+				padding-right: 15px;
+			}
+			& .rectangle {
+				width: 40px;
+				height: 151px;
+				background-color: #cce8f5;
+				@media screen and (max-width: 580px) {
+					height: 180px;
+				}
+			}
+			& .square {
+				width: 41px;
+				height: 36px;
+				background-color: #fff;
+				&-blue {
+					background-color: #cce8f5;
+				}
+			}
+		}
+		&-title {
+			text-transform: uppercase;
+			margin-bottom: 20px;
+			@media screen and (max-width: 580px) {
+				margin-bottom: 10px;
+			}
+		}
+		&-list {
+			&-item {
+				position: relative;
+				padding-left: 20px;
+				font-family: $R-r;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 22px;
+				color: $dark-green;
+				@media screen and (max-width: 425px) {
+					font-size: 12px;
+					line-height: 16px;
+				}
+				&::before {
+					content: "";
+					display: block;
+					position: absolute;
+					top: 8px;
+					left: 8px;
+					width: 4px;
+					height: 4px;
+					border-radius: 50%;
+					background-color: $dark-green;
+				}
+			}
+		}
+	}
+}

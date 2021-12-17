@@ -1,0 +1,57 @@
+.minus:before {
+	content: '';
+	width: 7px;
+	height: 1px;
+	display: block;
+	position: absolute;
+	left: -3px;
+	z-index: 5;
+	background-color: $black;
+	
+}
+.dot:before {
+	content: '';
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	display: block;
+	
+	background-color: $black;
+}
+.plus:before {
+	content: '';
+	width: 7px;
+	height: 1px;
+	display: block;
+	position: absolute;
+	left: -3px;
+	z-index: 5;
+	background-color: $black;
+}
+.plus:after {
+	content: '';
+	width: 1px;
+	height: 7px;
+	display: block;
+	position: absolute;
+	top: -3px;
+	z-index: 5;
+	background-color: $black;
+}
+.line:before {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 1px;
+	background-color: $lite-greey;
+}
+.line-right:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 8px;
+	height: 1px;
+	width: 10px;
+	background-color: $lite-greey;
+}

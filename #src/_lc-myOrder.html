@@ -1,0 +1,381 @@
+<div class="lc-content-title">
+	<h2 class="text-m text-m-f24-l30 text-m-blue">Мои заказы</h2>
+</div>
+<div class="lc-content-filter">
+	<div class="filter-item">
+		<label class="text-r text-r-f16-l25" for="">Поиск по моим заказам</label>
+		<div class="filter-item-search">
+			<input type="search" id="" class="inputForm inputForm-w320" placeholder="oc90">
+			<button class="search-btn">
+				<i class="icon-search"></i>
+			</button>
+		</div>
+	</div>
+	<div class="filter-item">
+		<input class="inputForm" id="inputData" type="text" name="daterange">
+	</div>
+	<div class="filter-item">
+		<select class="inputForm inputForm-w200 js-example-basic-single2" name="#" id="#">
+			<option value="0" selected>Фильтр по статусу заказа</option>
+		</select>
+	</div>
+</div>
+<div class="lc-content-list">
+	<div class="list-head">
+		<span class="list-head-item">Дата</span>
+		<span class="list-head-item">Заказ</span>
+		<span class="list-head-item">Сумма</span>
+		<span class="list-head-item">Статус</span>
+	</div>
+	<ul class="list-body">
+		<li class="list-body-item">
+			<div class="item-row" onclick="slide(this);">
+				<span class="text-r text-r-f16-l25">22.10.2021</span>
+				<span class="text-b-dot text-b-dot-f16-l22">1649496</span>
+				<span class="text-r text-r-f16-l25">100 грн.</span>
+				<span class="text-m text-m-green">Выполнен</span>
+			</div>
+			<div class="item-content" style="display: none">
+				<h3 class="item-content-title">Содержание заказа № <span>1641712</span></h3>
+				<div class="item-content-head">
+					<span class="content-head-item">Товар</span>
+					<span class="content-head-item">Количество</span>
+					<span class="content-head-item">Сумма</span>
+					<span class="content-head-item">Статус</span>
+					<span class="content-head-item">Отменить заказ</span>
+				</div>
+				<ul class="item-content-body">
+					<li class="content-body-item">
+						<a class="item-flex text-b-dot" href="#">Фильтр масляный DENCKERMANN A210039 A210039</a>
+						<div class="item-flex">
+							<span class="text-r text-r-f14-l20 text-r-greey">Количество</span>
+							<span class="text-m text-m-f18-l22">1 шт.</span>
+						</div>
+						<div class="item-flex">
+							<span class="text-r text-r-f14-l20 text-r-greey">Сумма</span>
+							<span class="text-m text-m-f18-l22">1772</span>
+						</div>
+						<div class="item-flex">
+							<span class="text-r text-r-f14-l20 text-r-greey">Статус</span>
+							<span class="text-m text-m-green">Выполнен</span>
+						</div>
+						
+						
+						
+						<div class="item-flex">
+							<span class="text-r text-r-f14-l20 text-r-greey">Отменить заказ</span>
+							<div class="item-flex-btn">
+								<button type="button" onclick="deleteItem2(this);">
+									<i class="icon-close"></i>
+								</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="item-content-deliver">
+					<div class="deliver-shipment">
+						<p class="text-r text-r-f16-l25 text-r-greey">Предполагаемая отгрузка:<span>13.11.2021 13:00:00</span></p>
+						<p class="text-r text-r-f16-l25 text-r-greey">Заказ использовался для ТО: <span>Не указано</span></p>
+					</div>
+					<div class="deliver-update">
+						<button class="deliver-update-btn" type="button">Обновить данные</button>
+					</div>
+				</div>
+				<div class="item-content-contentMenu">
+					<ul class="item-content-menu">
+						<li class="menu-item">
+							<button class="menu-item-btn" type="button" onclick="$('#exampleModal35').arcticmodal();">
+								<i class="icon-mailList"></i>
+								<span class="text-r text-r-f14-l20 text-r-black">Письмо менеджеру</span>
+							</button>
+						</li>
+						<li class="menu-item">
+							<button class="menu-item-btn" type="button" onclick="$('#exampleModal37').arcticmodal();">
+								<i class="icon-listPen"></i>
+								<span class="text-r text-r-f14-l20 text-r-black">Заметка к заказу</span>
+							</button>
+						</li>
+						<li class="menu-item">
+							<button class="menu-item-btn">
+								<i class="icon-repeat"></i>
+								<span class="text-r text-r-f14-l20 text-r-black">Повторить заказ</span>
+							</button>
+						</li>
+						<li class="menu-item">
+							<button class="menu-item-btn" type="button" onclick="$('#exampleModal36').arcticmodal();">
+								<i class="icon-layer"></i>
+								<span class="text-r text-r-f14-l20 text-r-black">Сообщить об оплате</span>
+							</button>
+						</li>
+					</ul>
+					<div class="item-content-swap">
+						<button class="text-r text-r-f14-l20 text-r-greey pointer" type="button" onclick="closeDropDown(this);">
+							Свернуть
+						</button>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="list-body-item">
+			<div class="item-row" onclick="slide(this);">
+				<span class="text-r text-r-f16-l25">22.10.2021</span>
+				<span class="text-b-dot text-b-dot-f16-l22">1649496</span>
+				<span class="text-r text-r-f16-l25">100 грн.</span>
+				<span class="text-m text-m-orange">Отгружен</span>
+			</div>
+			<div class="item-content" style="display: none">
+				<h3 class="item-content-title">Содержание заказа № <span>1641712</span></h3>
+				<div class="item-content-head">
+					<span class="content-head-item">Товар</span>
+					<span class="content-head-item">Количество</span>
+					<span class="content-head-item">Сумма</span>
+					<span class="content-head-item">Статус</span>
+					<span class="content-head-item">Отменить заказ</span>
+				</div>
+				<ul class="item-content-body">
+					<li class="content-body-item">
+						<a class="item-flex text-b-dot" href="#">Фильтр масляный DENCKERMANN A210039 A210039</a>
+						<div class="item-flex">
+							<span class="text-r text-r-f14-l20 text-r-greey">Количество</span>
+							<span class="text-m text-m-f18-l22">1 шт.</span>
+						</div>
+						<div class="item-flex">
+							<span class="text-r text-r-f14-l20 text-r-greey">Сумма</span>
+							<span class="text-m text-m-f18-l22">1772</span>
+						</div>
+						<div class="item-flex">
+							<span class="text-r text-r-f14-l20 text-r-greey">Статус</span>
+							<span class="text-m text-m-orange">Отгружен</span>
+						</div>
+						
+						
+						
+						<div class="item-flex">
+							<span class="text-r text-r-f14-l20 text-r-greey">Отменить заказ</span>
+							<div class="item-flex-btn">
+								<button type="button" onclick="deleteItem2(this);">
+									<i class="icon-close"></i>
+								</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="item-content-deliver">
+					<div class="deliver-shipment">
+						<p class="text-r text-r-f16-l25 text-r-greey">Предполагаемая отгрузка:<span>13.11.2021 13:00:00</span></p>
+						<p class="text-r text-r-f16-l25 text-r-greey">Заказ использовался для ТО: <span>Не указано</span></p>
+					</div>
+					<div class="deliver-update">
+						<button class="deliver-update-btn" type="button">Обновить данные</button>
+					</div>
+				</div>
+				<div class="item-content-contentMenu">
+					<ul class="item-content-menu">
+						<li class="menu-item">
+							<button class="menu-item-btn" type="button" onclick="$('#exampleModal35').arcticmodal();">
+								<i class="icon-mailList"></i>
+								<span class="text-r text-r-f14-l20 text-r-black">Письмо менеджеру</span>
+							</button>
+						</li>
+						<li class="menu-item">
+							<button class="menu-item-btn" type="button" onclick="$('#exampleModal37').arcticmodal();">
+								<i class="icon-listPen"></i>
+								<span class="text-r text-r-f14-l20 text-r-black">Заметка к заказу</span>
+							</button>
+						</li>
+						<li class="menu-item">
+							<button class="menu-item-btn">
+								<i class="icon-repeat"></i>
+								<span class="text-r text-r-f14-l20 text-r-black">Повторить заказ</span>
+							</button>
+						</li>
+						<li class="menu-item">
+							<button class="menu-item-btn" type="button" onclick="$('#exampleModal36').arcticmodal();">
+								<i class="icon-layer"></i>
+								<span class="text-r text-r-f14-l20 text-r-black">Сообщить об оплате</span>
+							</button>
+						</li>
+					</ul>
+					<div class="item-content-swap">
+						<button class="text-r text-r-f14-l20 text-r-greey pointer" type="button" onclick="closeDropDown(this);">
+							Свернуть
+						</button>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="list-body-item">
+			<div class="item-row" onclick="slide(this);">
+				<span class="text-r text-r-f16-l25">22.10.2021</span>
+				<span class="text-b-dot text-b-dot-f16-l22">1649496</span>
+				<span class="text-r text-r-f16-l25">100 грн.</span>
+				<span class="text-m text-m-blue">В работе</span>
+			</div>
+			<div class="item-content" style="display: none">
+				<h3 class="item-content-title">Содержание заказа № <span>1641712</span></h3>
+				<div class="item-content-head">
+					<span class="content-head-item">Товар</span>
+					<span class="content-head-item">Количество</span>
+					<span class="content-head-item">Сумма</span>
+					<span class="content-head-item">Статус</span>
+					<span class="content-head-item">Отменить заказ</span>
+				</div>
+				<ul class="item-content-body">
+					<li class="content-body-item">
+						<a class="item-flex text-b-dot" href="#">Фильтр масляный DENCKERMANN A210039 A210039</a>
+						<div class="item-flex">
+							<span class="text-r text-r-f14-l20 text-r-greey">Количество</span>
+							<span class="text-m text-m-f18-l22">1 шт.</span>
+						</div>
+						<div class="item-flex">
+							<span class="text-r text-r-f14-l20 text-r-greey">Сумма</span>
+							<span class="text-m text-m-f18-l22">1772</span>
+						</div>
+						<div class="item-flex">
+							<span class="text-r text-r-f14-l20 text-r-greey">Статус</span>
+							<span class="text-m text-m-blue">В работе</span>
+						</div>
+						
+						
+						
+						<div class="item-flex">
+							<span class="text-r text-r-f14-l20 text-r-greey">Отменить заказ</span>
+							<div class="item-flex-btn">
+								<button type="button" onclick="deleteItem2(this);">
+									<i class="icon-close"></i>
+								</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="item-content-deliver">
+					<div class="deliver-shipment">
+						<p class="text-r text-r-f16-l25 text-r-greey">Предполагаемая отгрузка:<span>13.11.2021 13:00:00</span></p>
+						<p class="text-r text-r-f16-l25 text-r-greey">Заказ использовался для ТО: <span>Не указано</span></p>
+					</div>
+					<div class="deliver-update">
+						<button class="deliver-update-btn" type="button">Обновить данные</button>
+					</div>
+				</div>
+				<div class="item-content-contentMenu">
+					<ul class="item-content-menu">
+						<li class="menu-item">
+							<button class="menu-item-btn" type="button" onclick="$('#exampleModal35').arcticmodal();">
+								<i class="icon-mailList"></i>
+								<span class="text-r text-r-f14-l20 text-r-black">Письмо менеджеру</span>
+							</button>
+						</li>
+						<li class="menu-item">
+							<button class="menu-item-btn" type="button" onclick="$('#exampleModal37').arcticmodal();">
+								<i class="icon-listPen"></i>
+								<span class="text-r text-r-f14-l20 text-r-black">Заметка к заказу</span>
+							</button>
+						</li>
+						<li class="menu-item">
+							<button class="menu-item-btn">
+								<i class="icon-repeat"></i>
+								<span class="text-r text-r-f14-l20 text-r-black">Повторить заказ</span>
+							</button>
+						</li>
+						<li class="menu-item">
+							<button class="menu-item-btn" type="button" onclick="$('#exampleModal36').arcticmodal();">
+								<i class="icon-layer"></i>
+								<span class="text-r text-r-f14-l20 text-r-black">Сообщить об оплате</span>
+							</button>
+						</li>
+					</ul>
+					<div class="item-content-swap">
+						<button class="text-r text-r-f14-l20 text-r-greey pointer" type="button" onclick="closeDropDown(this);">
+							Свернуть
+						</button>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="list-body-item">
+			<div class="item-row" onclick="slide(this);">
+				<span class="text-r text-r-f16-l25">22.10.2021</span>
+				<span class="text-b-dot text-b-dot-f16-l22">1649496</span>
+				<span class="text-r text-r-f16-l25">11368 грн.</span>
+				<span class="text-m text-m-red">Отказ</span>
+			</div>
+			<div class="item-content" style="display: none">
+				<h3 class="item-content-title">Содержание заказа № <span>1641712</span></h3>
+				<div class="item-content-head">
+					<span class="content-head-item">Товар</span>
+					<span class="content-head-item">Количество</span>
+					<span class="content-head-item">Сумма</span>
+					<span class="content-head-item">Статус</span>
+					<span class="content-head-item">Отменить заказ</span>
+				</div>
+				<ul class="item-content-body">
+					<li class="content-body-item">
+						<a class="item-flex text-b-dot" href="#">Фильтр масляный DENCKERMANN A210039 A210039</a>
+						<div class="item-flex">
+							<span class="text-r text-r-f14-l20 text-r-greey">Количество</span>
+							<span class="text-m text-m-f18-l22">1 шт.</span>
+						</div>
+						<div class="item-flex">
+							<span class="text-r text-r-f14-l20 text-r-greey">Сумма</span>
+							<span class="text-m text-m-f18-l22">1772</span>
+						</div>
+						<div class="item-flex">
+							<span class="text-r text-r-f14-l20 text-r-greey">Статус</span>
+							<span class="text-m text-m-red">Отказ</span>
+						</div>
+						<div class="item-flex">
+							<span class="text-r text-r-f14-l20 text-r-greey">Отменить заказ</span>
+							<div class="item-flex-btn">
+								<button type="button" onclick="deleteItem2(this);">
+									<i class="icon-close"></i>
+								</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="item-content-deliver">
+					<div class="deliver-shipment">
+						<p class="text-r text-r-f16-l25 text-r-greey">Предполагаемая отгрузка:<span>13.11.2021 13:00:00</span></p>
+						<p class="text-r text-r-f16-l25 text-r-greey">Заказ использовался для ТО: <span>Не указано</span></p>
+					</div>
+					<div class="deliver-update">
+						<button class="deliver-update-btn" type="button">Обновить данные</button>
+					</div>
+				</div>
+				<div class="item-content-contentMenu">
+					<ul class="item-content-menu">
+						<li class="menu-item">
+							<button class="menu-item-btn" type="button" onclick="$('#exampleModal35').arcticmodal();">
+								<i class="icon-mailList"></i>
+								<span class="text-r text-r-f14-l20 text-r-black">Письмо менеджеру</span>
+							</button>
+						</li>
+						<li class="menu-item">
+							<button class="menu-item-btn" type="button" onclick="$('#exampleModal37').arcticmodal();">
+								<i class="icon-listPen"></i>
+								<span class="text-r text-r-f14-l20 text-r-black">Заметка к заказу</span>
+							</button>
+						</li>
+						<li class="menu-item">
+							<button class="menu-item-btn">
+								<i class="icon-repeat"></i>
+								<span class="text-r text-r-f14-l20 text-r-black">Повторить заказ</span>
+							</button>
+						</li>
+						<li class="menu-item">
+							<button class="menu-item-btn" type="button" onclick="$('#exampleModal36').arcticmodal();">
+								<i class="icon-layer"></i>
+								<span class="text-r text-r-f14-l20 text-r-black">Сообщить об оплате</span>
+							</button>
+						</li>
+					</ul>
+					<div class="item-content-swap">
+						<button class="text-r text-r-f14-l20 text-r-greey pointer" type="button" onclick="closeDropDown(this);">
+							Свернуть
+						</button>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>

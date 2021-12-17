@@ -1,0 +1,159 @@
+.bg-cart {
+	background-color: $lite-greey;
+	padding: 30px 0px;
+	& .cart-table {
+		width: 100%;
+		&__head {
+			@media screen and (max-width: 580px) {
+				display: none;
+			}
+			&-coll {
+				background-color: $lite-greey;
+				box-sizing: border-box;
+				& th:nth-of-type(2) {
+					padding-left: 20px;
+					box-sizing: border-box;
+				}
+				& th {
+					padding: 15px 0px;
+					box-sizing: border-box;
+					text-align: left;
+					@media screen and (max-width: 425px) {
+						padding: 10px 0px;
+					}
+				}
+				& .amount {
+					width: 110px;
+				}
+				& th:last-child {
+					width: 25px;
+				}
+				& th:first-child {
+					width: 72px;
+				}
+			}
+		}
+		&__body {
+			@media screen and (max-width: 580px) {
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				height: 290px;
+				overflow: scroll;
+			}
+			@media screen and (max-width: 425px) {
+				height: 310px;
+			}
+			&-coll {
+				border-bottom: 1px solid $greey;
+				@media screen and (max-width: 580px) {
+					flex-direction: column;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border: none;
+				}
+				& th {
+					text-align: left;
+					vertical-align: middle;
+					@media screen and (max-width: 580px) {
+						padding: 5px 0px;
+						box-sizing: border-box;
+						text-align: center;
+					}
+					& img {
+						width: 90px;
+						height: 90px;
+						object-fit: contain;
+						background-color: $white;
+					}
+					& .name {
+						padding-left: 20px;
+						box-sizing: border-box;
+						display: flex;
+						flex-direction: column;
+						align-items: flex-start;
+						justify-content: flex-start;
+						@media screen and (max-width: 580px) {
+							align-items: center;
+							justify-content: center;
+						}
+					}
+					& .price-mob {
+						display: none;
+						@media screen and (max-width: 580px) {
+							display: inline-block;
+							margin-right: 10px;
+						}
+					}
+				}
+				& .amount {
+					width: 110px;
+					& .iterator {
+						background-color: $white;
+					}
+					@media screen and (max-width: 580px) {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+				}
+				& th:last-child {
+					width: 25px;
+					& button {
+						background: transparent;
+						border: none;
+						outline: none;
+						padding: 0px;
+						cursor: pointer;
+						& .icon-close::before {
+							font-size: 15px;
+							color: $red;
+							@media screen and (max-width: 580px) {
+								font-size: 20px;
+							}
+						}
+					}
+				}
+				& th:first-child {
+					width: 72px;
+				}
+			}
+		}
+	}
+	& .sum {
+		display: flex;
+		justify-content: flex-end;
+		&-box {
+			width: 270px;
+			@media screen and (max-width: 450px) {
+				width: 100%;
+			}
+			&-top {
+				padding: 18px 0px 16px;
+				border-bottom: 1px solid $blue;
+				@media screen and (max-width: 450px) {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+				}
+				& span:first-child {
+					display: inline-block;
+					width: 30%;
+				}
+			}
+			&-bottom {
+				padding-top: 15px;
+				@media screen and (max-width: 450px) {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+				}
+				& span:first-child {
+					display: inline-block;
+					width: 30%;
+				}
+			}
+		}
+	}
+}

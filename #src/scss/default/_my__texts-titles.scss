@@ -1,0 +1,164 @@
+.text-b {
+	font-family: $R-b;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	color: $dark-green;
+	&-uper {
+		text-transform: uppercase;
+	}
+	&-f16-l22 {
+		font-size: 16px;
+		line-height: 22px;
+	}
+	&-f24-l30 {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	&-white {
+		color: $white;
+	}
+	&-blue {
+		color: $blue-text;
+	}
+	&-greey {
+		color: $greey;
+	}
+}
+.text-m {
+	font-family: $R-m;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: $dark-green;
+	&-f11-l13 {
+		font-size: 11px;
+		line-height: 13px;
+	}
+	&-f14-l20 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	&-f18-l22 {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	&-f24-l30 {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	&-f36-l42 {
+		font-size: 36px;
+		line-height: 42px;
+		@media screen and (max-width: 1024px) {
+			font-size: 32px;
+			line-height: 38px;
+		}
+		@media screen and (max-width: 768px) {
+			font-size: 28px;
+			line-height: 34px;
+		}
+		@media screen and (max-width: 580px) {
+			font-size: 22px;
+			line-height: 28px;
+		}
+		@media screen and (max-width: 425px) {
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+	&-blue {
+		color: $blue-text;
+	}
+	&-black {
+		color: $black;
+	}
+	&-white {
+		color: $white;
+	}
+	&-greey {
+		color: $greey;
+	}
+	&-orange {
+		color: $orange;
+	}
+	&-green {
+		color: $green;
+	}
+	&-red {
+		color: $red;
+	}
+}
+.text-r {
+	font-family: $R-r;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	color: $dark-green;
+	&-f10-l16 {
+		font-size: 10px;
+		line-height: 16px;
+	}
+	&-f12-l14 {
+		font-size: 12px;
+		line-height: 14px;
+	}
+	&-f14-l20 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	&-f16-l25 {
+		font-size: 16px;
+		line-height: 25px;
+	}
+	&-f18-l24 {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	&-blue {
+		color: $blue-text;
+	}
+	&-black {
+		color: $black;
+	}
+	&-white {
+		color: $white;
+	}
+	&-green {
+		color: $green;
+	}
+	&-greey {
+		color: $greey;
+	}
+	&-red {
+		color: $red;
+	}
+}
+.title-T {
+	font-family: $R-m;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 42px;
+	color: $dark-green;
+	@media screen and (max-width: 768px) {
+		font-size: 30px;
+		line-height: 34px;
+	}
+}
+.text-b-dot {
+	font-family: $R-r;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: $blue-text;
+	cursor: pointer;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	&-f16-l22 {
+		font-size: 16px;
+		line-height: 22px;
+	}
+	&:hover {
+		color: $lite-blue;
+	}
+}

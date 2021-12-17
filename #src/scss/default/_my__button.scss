@@ -1,0 +1,160 @@
+/*--- стили кнопок ---*/
+.btn {
+	width: 100px;
+	height: 40px;
+	background: $blue;
+	border: none;
+	font-family: $R-m;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	box-sizing: border-box;
+	cursor: pointer;
+	text-decoration: none;
+	color: $white;
+	transition: all 0.2s ease;
+	&:first-letter {
+		text-transform: uppercase;
+	}
+	&:hover {
+		background: $lite-blue;
+	}
+	&:active {
+		background: $blue;
+	}
+	&-catalog {
+		width: 155px;
+		height: 32px;
+		justify-content: space-between;
+		padding: 0 23px 0 7px;
+	}
+	&-midl {
+		width: 115px;
+	}
+	&-mid {
+		width: 135px;
+	}
+	&-big {
+		width: 165px;
+	}
+	&-bigB {
+		width: 175px;
+	}
+	&-bigBB {
+		width: 210px;
+	}
+	&-bigBBB {
+		width: 225px;
+	}
+	&-bigB4 {
+		width: 235px;
+	}
+	&-w100P{
+		width: 100%;
+	}
+	&-whiteBlue {
+		background: $white;
+		color: $blue;
+		border: 2px solid $blue;
+		box-sizing: border-box;
+		font-size: 16px;
+		line-height: 22px;
+		&:hover {
+			background: $blue;
+			color: $white;
+		}
+		&:active {
+			background: $lite-blue;
+			border-color: $lite-blue;
+		}
+	}
+	&-white {
+		background: transparent;
+		color: $white;
+		border: 2px solid $white;
+		&:hover {
+			background: $white;
+			color: $lite-blue;
+		}
+		&:focus {
+			background: $white;
+			color: $blue;
+		}
+	}
+}
+.btn2 {
+	background-color: $white;
+	border: none;
+	outline: none;
+	font-family: $R-r;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: $blue-text;
+	cursor: pointer;
+	padding: 0;
+	&:hover {
+		color: $lite-blue;
+	}
+	&-f16-l24 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	&-b {
+		font-family: $R-m;
+		font-weight: 500;
+	}
+}
+.btn-dots {
+	background-color: transparent;
+	font-family: $R-r;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: $blue-text;
+	cursor: pointer;
+	padding: 0;
+	outline: none;
+	border: none;
+	border-bottom: 1px dotted $blue-text;
+	box-sizing: border-box;
+	transition: all 0.2s linear;
+	&:hover {
+		color: $lite-blue;
+		border-color: $lite-blue;
+	}
+	&-f12-l14 {
+		font-size: 12px;
+		line-height: 14px;
+	}
+	&-f16-l25 {
+		font-size: 16px;
+		line-height: 25px;
+	}
+}
+/*--- стили кнопок ---*/
+.search-btn {
+	width: 40px;
+	min-width: 40px;
+	height: 40px;
+	background: $blue;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	& .icon-search::before {
+		font-size: 25px;
+	}
+}
+.daterangepicker.show-calendar .drp-buttons {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}

@@ -1,0 +1,170 @@
+.container-checkout {
+	margin-top: 35px;
+	@media screen and (max-width: 425px) {
+		margin-top: 15px;
+	}
+	& .box-top {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-bottom: 25px;
+		@media screen and (max-width: 1280px) {
+			grid-gap: 10px;
+		}
+		@media screen and (max-width: 1024px) {
+			grid-gap: 0px;
+		}
+		@media screen and (max-width: 425px) {
+			margin-bottom: 15px;
+		}
+		& label:first-child {
+			width: 100%;
+			margin-bottom: 15px;
+		}
+		& .js-example-basic-single {
+			width: 260px;
+		}
+		& label {
+			margin-right: 15px;
+		}
+		& .select2 {
+			margin-right: 30px;
+			@media screen and (max-width: 768px) {
+				margin-bottom: 15px;
+				margin-right: 0px;
+			}
+		}
+		& .box-city {
+			@media screen and (max-width: 1024px) {
+				margin-top: 15px;
+				width: 100%;
+			}
+		}
+	}
+	& .box-bot {
+		display: flex;
+		margin-bottom: 15px;
+		@media screen and (max-width: 768px) {
+			flex-wrap: wrap;
+		}
+		&-left {
+			width: 50%;
+			margin-right: 15px;
+			@media screen and (max-width: 768px) {
+				width: 100%;
+				margin-right: 0px;
+			}
+		}
+		&-left2 {
+			width: 360px;
+			margin-right: 30px;
+			@media screen and (max-width: 1024px) {
+				margin-right: 15px;
+			}
+			@media screen and (max-width: 768px) {
+				margin-right: 0px;
+			}
+			@media screen and (max-width: 580px) {
+				width: 100%;
+			}
+			& .box-bot-item2 {
+				margin-bottom: 40px;
+				padding: 10px 30px 15px;
+				background-color: $blue;
+				@media screen and (max-width: 425px) {
+					margin-bottom: 15px;
+				}
+			}
+		}
+		&-right2 {
+			@media screen and (max-width: 768px) {
+				width: 100%;
+			}
+			& .box-bot-img {
+				margin-top: 105px;
+				@media screen and (max-width: 768px) {
+					margin-top: 0px;
+				}
+				& img {
+					width: 360px;
+					height: 270px;
+					@media screen and (max-width: 425px) {
+						width: 280px;
+						height: 220px;
+					}
+				}
+			}
+		}
+		&-right {
+			width: 50%;
+			margin-top: 80px;
+			@media screen and (max-width: 1024px) {
+				margin-top: 40px;
+			}
+			@media screen and (max-width: 768px) {
+				width: 100%;
+			}
+			@media screen and (max-width: 425px) {
+				margin-top: 15px;
+			}
+			& .box-title {
+				margin-bottom: 30px;
+				@media screen and (max-width: 425px) {
+					margin-bottom: 15px;
+				}
+				& .icon-danger::before {
+					margin-right: 5px;
+					font-size: 24px;
+					position: relative;
+					bottom: -4px;
+				}
+				& p {
+					margin-top: 10px;
+				}
+			}
+			& .list-posht {
+				margin-bottom: 25px;
+				&-item {
+					display: flex;
+					align-items: center;
+					margin: 7px 0;
+					& .icon-nova-poshta::before {
+						margin-right: 10px;
+					}
+				}
+			}
+			& .box-offer-item {
+				margin-bottom: 5px;
+				& span {
+					color: $red;
+				}
+			}
+		}
+		&-item {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 25px;
+			@media screen and (max-width: 425px) {
+				margin-bottom: 15px;
+			}
+			& label:first-child {
+				width: 100%;
+				margin-bottom: 15px;
+			}
+			& .js-example-basic-single2 {
+				width: 360px;
+			}
+		}
+		&-img {
+			margin-top: 30px;
+			& img {
+				width: 360px;
+				height: 240px;
+				@media screen and (max-width: 425px) {
+					width: 280px;
+					height: 200px;
+				}
+			}
+		}
+	}
+}

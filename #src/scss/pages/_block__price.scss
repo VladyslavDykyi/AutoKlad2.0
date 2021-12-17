@@ -1,0 +1,83 @@
+.box__price {
+	width: 310px;
+	min-width: 310px;
+	margin: 0 20px;
+	padding-top: 30px;
+	box-sizing: border-box;
+	@media screen and (max-width: 1280px) {
+		min-width: 290px;
+	}
+	@media screen and (max-width: 1024px) {
+		min-width: 220px;
+	}
+	@media screen and (max-width: 768px) {
+		width: 100%;
+		margin: 0;
+		padding-bottom: 30px;
+	}
+	&-buy {
+		display: flex;
+		align-items: center;
+		margin-bottom: 25px;
+		@media screen and (max-width: 1024px) {
+			margin-bottom: 15px;
+		}
+		@media screen and (max-width: 768px) {
+			justify-content: space-around;
+		}
+		& button {
+			margin-left: 25px;
+			text-transform: capitalize;
+		}
+	}
+	&-geo {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 35px;
+		@media screen and (max-width: 1024px) {
+			margin-bottom: 15px;
+			flex-wrap: wrap;
+			justify-content: inherit;
+			& span:first-child {
+				width: 100%;
+			}
+			& span:last-child {
+				margin-left: 5px;
+			}
+		}
+		@media screen and (max-width: 768px) {
+			justify-content: space-between;
+			& span:first-child {
+				width: auto;
+			}
+		}
+	}
+	&-like {
+		display: flex;
+		align-items: center;
+		margin-bottom: 45px;
+		@media screen and (max-width: 1024px) {
+			margin-bottom: 15px;
+		}
+		&_btn {
+			display: flex;
+			align-items: center;
+			& .icon-favorite::before {
+				font-size: 20px;
+				margin-right: 10px;
+			}
+			&:hover .icon-favorite::before {
+				color: $lite-blue;
+			}
+		}
+	}
+	&-compatibility {
+		& .box-sort {
+			&__item {
+				display: inline;
+				margin-right: 15px;
+			}
+		}
+	}
+}

@@ -1,0 +1,111 @@
+.block-category {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	grid-gap: 10px 30px;
+	margin: 35px 0 60px;
+	@media screen and (max-width: 1280px) {
+		justify-content: center;
+	}
+	@media screen and (max-width: 1024px) {
+		justify-content: flex-start;
+		grid-gap: 10px 18px;
+	}
+	@media screen and (max-width: 768px) {
+		justify-content: center;
+		grid-gap: 20px 0;
+	}
+	&__item {
+		position: relative;
+		height: 100%;
+		transition: all 0.2s linear;
+		padding: 20px;
+		width: 360px;
+		background: $white;
+		border: 1px solid $lite-greey;
+		box-sizing: border-box;
+		box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+		&:hover .block-category__item-cont {
+			transform: translateX(0px);
+		}
+		&-box {
+			position: relative;
+			display: flex;
+			flex-direction: column-reverse;
+			align-items: center;
+			height: 140px;
+			&__img {
+				position: absolute;
+				top: calc(50% - 5px);
+				left: 50%;
+				transform: translate(-50%, -50%);
+				max-height: 105px;
+				max-width: 105px;
+				vertical-align: middle;
+			}
+			&__title {
+				font-family: $R-b;
+				font-weight: 700;
+				font-size: 18px;
+				line-height: 24px;
+				text-transform: uppercase;
+				color: $dark-green;
+			}
+		}
+		&-cont {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			transition: all 0.2s linear;
+			transform: translateX(360px);
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			background-color: $white;
+			padding: 10px;
+			box-sizing: border-box;
+			@media screen and (max-width: 425px) {
+				overflow: scroll;
+			}
+			&:hover {
+				transform: translateX(0px);
+			}
+			&__links {
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;
+				width: 100%;
+				height: 100%;
+				&-item {
+					width: 50%;
+					& .item {
+						font-family: $R-r;
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 20px;
+						color: $dark-green;
+						box-sizing: border-box;
+						&:hover {
+							color: $blue-text;
+						}
+					}
+				}
+				& .block-category__item-links__item:nth-child(even) {
+					margin-left: auto;
+				}
+			}
+			& .row {
+				flex-wrap: nowrap;
+				& li.block-category__item-cont__links-item {
+					width: 100%;
+				}
+			}
+			& .block-category__item-cont__links:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

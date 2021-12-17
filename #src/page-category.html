@@ -1,0 +1,41 @@
+@@include('_header5.html')
+<main class="bg-site category-page">
+	<div class="container">
+		<ul class="bread-dots">
+			<li class="bread-dots__item">
+				<a class="bread-link" href=""><i class="icon-hous"></i></a>
+			</li>
+			<li class="bread-dots__item icon-arrowR">
+				<a class="bread-link" href="">Каталог запчастей на авто</a>
+			</li>
+			<li class="bread-dots__item icon-arrowR">
+				<a class="bread-link" href="">VW</a>
+			</li>
+			<li class="bread-dots__item icon-arrowR">
+				<a class="bread-link" href="">
+					Polo
+				</a>
+			</li>
+			<li class="bread-dots__item icon-arrowR active">
+				<a class="bread-link" href="">
+					<span class="text">Запчасти для</span>
+					<span class="name">POLO 1.4 GTI</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="container">
+		<div class="category-page__container">
+			@@include('_page-category__head.html')
+			@@include('_page-category__sideBar.html')
+			@@include('_page-category__sideBar2.html')
+			@@include('_page-category__carts.html')
+		</div>
+	</div>
+	<div class="bottom-text">
+		<div class="container">
+			@@include('_page-category__bot-text.html')
+		</div>
+	</div>
+</main>
+@@include('_footer5.html')

@@ -1,0 +1,419 @@
+<div class="category-page__container-sideBar">
+	<!-- <div class="sidebar-head">
+		<label class="text-r text-r-f16-l25" for="s-VIN">Точный подбор по VIN номеру</label>
+		<div class="sidebar-head__box-s">
+			<input class="inputForm" id="s-VIN" type="search">
+			<button class="search-btn">
+				<i class="icon-search"></i>
+			</button>
+		</div>
+		<button class="btn2" onclick="$('#exampleModal1').arcticmodal();">Изменить авто</button>
+	</div> -->
+	<div class="sidebar-head">
+		<ul class="cheked-box">
+			<li class="cheked-box__item">
+				<div class="paramss">
+					<p class="text-r text-r-f14-l20">Вязкость по SAE: 5W-30</p>
+					<button>
+						<i class="icon-close"></i>
+					</button>
+				</div>
+			</li>
+			<li class="cheked-box__item">
+				<div class="paramss">
+					<p class="text-r text-r-f14-l20">Емкость, л: 4</p>
+					<button>
+						<i class="icon-close"></i>
+					</button>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<ul class="sidebar-content">
+		<li class="sidebar-content__box">
+			<h5 class="sidebar-content__box-title pointer" onclick="dropCatalog33(this)">Бренд</h5>
+			<ul class="sidebar-content__box-container" style="display: none;">
+				<li class="sidebar-content__box-container__item">
+					<label class="check option">
+						<input class="check__input" type="checkbox">
+						<span class="check__box"></span>
+						<p class="text-r text-r-f16-l25">ARAL <span>(47)</span></p>
+					</label>
+				</li>
+				<li class="sidebar-content__box-container__item">
+					<label class="check option">
+						<input class="check__input" type="checkbox">
+						<span class="check__box"></span>
+						<span class="text-r text-r-f16-l25">В наличии</span>
+					</label>
+				</li>
+			</ul>
+		</li>
+		<li class="sidebar-content__box">
+			<h5 class="sidebar-content__box-title pointer" onclick="dropCatalog33(this)">Вязкость по SAE</h5>
+			<ul class="sidebar-content__box-container" style="display: none;">
+				<li class="sidebar-content__box-container__item">
+					<label class="check option">
+						<input class="check__input" type="checkbox" checked="">
+						<span class="check__box"></span>
+						<span class="text-r text-r-f16-l25">В наличии</span>
+					</label>
+				</li>
+			</ul>
+		</li>
+		<li class="sidebar-content__box">
+			<h5 class="sidebar-content__box-title pointer" onclick="dropCatalog33(this)">Емкость, л
+			</h5>
+			<ul class="sidebar-content__box-container" style="display: none;">
+				<li class="sidebar-content__box-container__item">
+					<label class="check option">
+						<input class="check__input" type="checkbox" checked="">
+						<span class="check__box"></span>
+						<span class="text-r text-r-f16-l25">В наличии</span>
+					</label>
+				</li>
+			</ul>
+		</li>
+		<li class="sidebar-content__box">
+			<h5 class="sidebar-content__box-title pointer" onclick="dropCatalog33(this)">Классификация API</h5>
+			<ul class="sidebar-content__box-container" style="display: none;">
+				<li class="sidebar-content__box-container__item">
+					<label class="check option">
+						<input class="check__input" type="checkbox" checked="">
+						<span class="check__box"></span>
+						<span class="text-r text-r-f16-l25">В наличии</span>
+					</label>
+				</li>
+			</ul>
+		</li>
+		<li class="sidebar-content__box">
+			<h5 class="sidebar-content__box-title pointer" onclick="dropCatalog33(this)">Классификация ACEA</h5>
+			<ul class="sidebar-content__box-container" style="display: none;">
+				<li class="sidebar-content__box-container__item">
+					<label class="check option">
+						<input class="check__input" type="checkbox" checked="">
+						<span class="check__box"></span>
+						<span class="text-r text-r-f16-l25">В наличии</span>
+					</label>
+				</li>
+			</ul>
+		</li>
+		<li class="sidebar-content__box">
+			<h5 class="sidebar-content__box-title pointer" onclick="dropCatalog33(this)">Классификация ILSAC
+			</h5>
+			<ul class="sidebar-content__box-container" style="display: none;">
+				<li class="sidebar-content__box-container__item">
+					<label class="check option">
+						<input class="check__input" type="checkbox" checked="">
+						<span class="check__box"></span>
+						<span class="text-r text-r-f16-l25">В наличии</span>
+					</label>
+				</li>
+				<li class="sidebar-content__box-container__item">
+					<label class="check option">
+						<input class="check__input" type="checkbox" checked="">
+						<span class="check__box"></span>
+						<span class="text-r text-r-f16-l25">В наличии</span>
+					</label>
+				</li>
+				<li class="sidebar-content__box-container__item">
+					<label class="check option">
+						<input class="check__input" type="checkbox" checked="">
+						<span class="check__box"></span>
+						<span class="text-r text-r-f16-l25">В наличии</span>
+					</label>
+				</li>
+			</ul>
+		</li>
+		<li class="sidebar-content__box">
+			<h5 class="sidebar-content__box-title pointer" onclick="dropCatalog33(this)">Классификация GLOBAL</h5>
+			<ul class="sidebar-content__box-container" style="display: none;">
+				<li class="sidebar-content__box-container__item">
+					<h6 class="sidebar-content__box-container__item-title pointer" onclick="dropCatalog44(this)">
+						Выключатели,
+						кнопки</h6>
+					<ul class="sidebar-content__box-container__item-box" style="display: none;">
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель освещения салона</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель стеклоподъемника</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель фары заднего хода</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Переключатель указателей поворота</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li class="sidebar-content__box">
+			<h5 class="sidebar-content__box-title pointer" onclick="dropCatalog33(this)">Классификация NATO</h5>
+			<ul class="sidebar-content__box-container" style="display: none;">
+				<li class="sidebar-content__box-container__item">
+					<h6 class="sidebar-content__box-container__item-title pointer" onclick="dropCatalog44(this)">
+						Выключатели,
+						кнопки</h6>
+					<ul class="sidebar-content__box-container__item-box" style="display: none;">
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель освещения салона</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель стеклоподъемника</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель фары заднего хода</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Переключатель указателей поворота</a>
+						</li>
+					</ul>
+				</li>
+				<li class="sidebar-content__box-container__item">
+					<h6 class="sidebar-content__box-container__item-title pointer" onclick="dropCatalog44(this)">
+						Выключатели,
+						кнопки</h6>
+					<ul class="sidebar-content__box-container__item-box" style="display: none;">
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель освещения салона</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель стеклоподъемника</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель фары заднего хода</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Переключатель указателей поворота</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li class="sidebar-content__box">
+			<h5 class="sidebar-content__box-title pointer" onclick="dropCatalog33(this)">Классификация ZF</h5>
+			<ul class="sidebar-content__box-container" style="display: none;">
+				<li class="sidebar-content__box-container__item">
+					<h6 class="sidebar-content__box-container__item-title pointer" onclick="dropCatalog44(this)">
+						Выключатели, кнопки</h6>
+					<ul class="sidebar-content__box-container__item-box" style="display: none;">
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель освещения салона</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель стеклоподъемника</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель фары заднего хода</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Переключатель указателей поворота</a>
+						</li>
+					</ul>
+				</li>
+				<li class="sidebar-content__box-container__item">
+					<h6 class="sidebar-content__box-container__item-title pointer" onclick="dropCatalog44(this)">Датчики
+					</h6>
+					<ul class="sidebar-content__box-container__item-box" style="display: none;">
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href=""></a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href=""></a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href=""></a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href=""></a>
+						</li>
+					</ul>
+				</li>
+				<li class="sidebar-content__box-container__item">
+					<h6 class="sidebar-content__box-container__item-title pointer" onclick="dropCatalog44(this)">
+						Зажигание, накаливание</h6>
+					<ul class="sidebar-content__box-container__item-box" style="display: none;">
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href=""></a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href=""></a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href=""></a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href=""></a>
+						</li>
+					</ul>
+				</li>
+				<li class="sidebar-content__box-container__item">
+					<a class="link" href="">Лампы задних фонарей</a>
+				</li>
+				<li class="sidebar-content__box-container__item">
+					<h6 class="sidebar-content__box-container__item-title pointer" onclick="dropCatalog44(this)">Лампы
+						передних фар</h6>
+					<ul class="sidebar-content__box-container__item-box" style="display: none;">
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href=""></a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href=""></a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href=""></a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href=""></a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li class="sidebar-content__box">
+			<h5 class="sidebar-content__box-title pointer" onclick="dropCatalog33(this)">Тип основы масла</h5>
+			<ul class="sidebar-content__box-container" style="display: none;">
+				<li class="sidebar-content__box-container__item">
+					<h6 class="sidebar-content__box-container__item-title pointer" onclick="dropCatalog44(this)">
+						Выключатели,
+						кнопки</h6>
+					<ul class="sidebar-content__box-container__item-box" style="display: none;">
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель освещения салона</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель стеклоподъемника</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель фары заднего хода</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Переключатель указателей поворота</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li class="sidebar-content__box">
+			<h5 class="sidebar-content__box-title pointer" onclick="dropCatalog33(this)">Назначение</h5>
+			<ul class="sidebar-content__box-container" style="display: none;">
+				<li class="sidebar-content__box-container__item">
+					<h6 class="sidebar-content__box-container__item-title pointer" onclick="dropCatalog44(this)">
+						Выключатели,
+						кнопки</h6>
+					<ul class="sidebar-content__box-container__item-box" style="display: none;">
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель освещения салона</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель стеклоподъемника</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель фары заднего хода</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Переключатель указателей поворота</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li class="sidebar-content__box">
+			<h5 class="sidebar-content__box-title pointer" onclick="dropCatalog33(this)">Допуски производителей</h5>
+			<ul class="sidebar-content__box-container" style="display: none;">
+				<li class="sidebar-content__box-container__item">
+					<h6 class="sidebar-content__box-container__item-title pointer" onclick="dropCatalog44(this)">
+						Выключатели,
+						кнопки</h6>
+					<ul class="sidebar-content__box-container__item-box" style="display: none;">
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель освещения салона</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель стеклоподъемника</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель фары заднего хода</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Переключатель указателей поворота</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li class="sidebar-content__box">
+			<h5 class="sidebar-content__box-title pointer" onclick="dropCatalog33(this)">Тип двигателя</h5>
+			<ul class="sidebar-content__box-container" style="display: none;">
+				<li class="sidebar-content__box-container__item">
+					<h6 class="sidebar-content__box-container__item-title pointer" onclick="dropCatalog44(this)">
+						Выключатели,
+						кнопки</h6>
+					<ul class="sidebar-content__box-container__item-box" style="display: none;">
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель освещения салона</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель стеклоподъемника</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель фары заднего хода</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Переключатель указателей поворота</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li class="sidebar-content__box">
+			<h5 class="sidebar-content__box-title pointer" onclick="dropCatalog33(this)">Классификация JASO</h5>
+			<ul class="sidebar-content__box-container" style="display: none;">
+				<li class="sidebar-content__box-container__item">
+					<h6 class="sidebar-content__box-container__item-title pointer" onclick="dropCatalog44(this)">
+						Выключатели,
+						кнопки</h6>
+					<ul class="sidebar-content__box-container__item-box" style="display: none;">
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель освещения салона</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель стеклоподъемника</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Выключатель фары заднего хода</a>
+						</li>
+						<li class="sidebar-content__box-container__item-box__item">
+							<a class="link" href="">Переключатель указателей поворота</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<div class="sidebar-foot">
+		<h3 class="sidebar-foot__title text-m text-m-f18-l22">Популярные запросы</h3>
+		<ul class="sidebar-foot__container">
+			<li class="sidebar-foot__container-item">
+				<a class="link text-b-dot" href="">мобил супер 2000 10w40</a>
+			</li>
+			<li class="sidebar-foot__container-item">
+				<a class="link text-b-dot" href="">подушка двигателя kia cerato</a>
+			</li>
+			<li class="sidebar-foot__container-item">
+				<a class="link text-b-dot" href="">honda jazz запчасти</a>
+			</li>
+			<li class="sidebar-foot__container-item">
+				<a class="link text-b-dot" href="">рамка под номерной знак киев</a>
+			</li>
+			<li class="sidebar-foot__container-item">
+				<a class="link text-b-dot" href="">датчик abs kia ceed</a>
+			</li>
+			<li class="sidebar-foot__container-item">
+				<a class="link text-b-dot" href="">автозапчасти на фольксваген кадди</a>
+			</li>
+		</ul>
+	</div>
+</div>

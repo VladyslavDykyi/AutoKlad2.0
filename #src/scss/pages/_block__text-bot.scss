@@ -1,0 +1,55 @@
+.bot-cont {
+	margin-top: 110px;
+	background: $lite-greey;
+	padding: 15px 0px 75px;
+	box-sizing: border-box;
+	@media screen and (max-width: 1024px) {
+		margin-top: 90px;
+	}
+	@media screen and (max-width: 768px) {
+		margin-top: 70px;
+	}
+	@media screen and (max-width: 580px) {
+		margin-top: 40px;
+	}
+	@media screen and (max-width: 425px) {
+		margin-top: 20px;
+	}
+	&__text {
+		height: 140px;
+		text-overflow: ellipsis;
+		-webkit-line-clamp: 2;
+		word-break: break-all;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		& p {
+			font-family: $R-r;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 25px;
+			color: $greey;
+			text-align: justify;
+		}
+	}
+	&__text.active {
+		height: auto;
+		text-overflow: clip;
+		display: block;
+		overflow: visible;
+		height: auto;
+	}
+	&__btn {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		& .full-btn {
+			cursor: pointer;
+			box-sizing: border-box;
+			outline: none;
+			padding: 0px;
+			border: none;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+	}
+}

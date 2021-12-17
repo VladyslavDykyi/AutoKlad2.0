@@ -1,0 +1,482 @@
+.titles-tab {
+	border-top: 1px solid $lite-greey;
+	padding: 5px 10px 0;
+	box-sizing: border-box;
+	margin: 0 -10px 25px;
+	& .title-tab {
+		border-top: 2px solid transparent;
+		cursor: pointer;
+		margin-right: 30px;
+		box-sizing: border-box;
+		padding-top: 5px;
+		font-family: $R-r;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		color: $dark-green;
+		transition: all 0.2s linear;
+		@media screen and (max-width: 580px) {
+			margin-right: 5px;
+		}
+		&:hover {
+			border-top: 2px solid $blue;
+		}
+		&.active {
+			border-top: 2px solid $blue;
+			cursor: auto;
+		}
+	}
+}
+.content-tabs {
+	display: none;
+	@media screen and (max-width: 1024px) {
+		border-bottom: 1px solid $small-greey;
+		margin: 0 5px;
+		padding-bottom: 10px;
+		box-sizing: border-box;
+	}
+	@media screen and (max-width: 768px) {
+		margin: 0 -10px;
+		padding: 0 15px 10px;
+	}
+	&.active {
+		display: block;
+	}
+	& .box-params {
+		&__item {
+			padding: 5px 20px;
+			box-sizing: border-box;
+			display: flex;
+			align-items: center;
+			& .item__name {
+				flex: 0 0 50%;
+			}
+			& .item__params {
+				&-box {
+				}
+			}
+		}
+		& .box-params__item:nth-child(2n + 1) {
+			background: $lite-greey;
+			border-radius: 2px;
+		}
+	}
+	& .box-params2 {
+		& .info {
+			margin: 20px 0 55px;
+			@media screen and (max-width: 580px) {
+				margin: 10px 0 15px;
+			}
+		}
+		&__number {
+			& .number__title {
+				margin-bottom: 10px;
+				@media screen and (max-width: 768px) {
+					margin: 0;
+					font-family: $R-r;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 22px;
+					color: $greey;
+				}
+			}
+			& .number__text {
+				margin-bottom: 20px;
+				width: 55%;
+				@media screen and (max-width: 1024px) {
+					width: 100%;
+				}
+			}
+			& .number__box {
+				&-item {
+					transition: all 0.2s linear;
+					display: flex;
+					align-items: center;
+					padding: 6px 4px;
+					box-sizing: border-box;
+					&:hover {
+						background: $lite-greey;
+						border-radius: 2px;
+					}
+					& .item-left {
+						flex: 0 0 150px;
+						& .name {
+							font-family: $R-r;
+							font-weight: 400;
+							font-size: 14px;
+							line-height: 21px;
+							color: $dark-green;
+						}
+					}
+					& .item-right {
+						& .content {
+							font-family: $R-r;
+							font-weight: 400;
+							font-size: 14px;
+							line-height: 21px;
+							color: $dark-green;
+						}
+					}
+				}
+			}
+		}
+	}
+	& .box-params3 {
+		font-family: $R-r;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 16px;
+		color: $greey;
+		& p {
+			font-family: $R-r;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 16px;
+			color: $greey;
+		}
+	}
+}
+.reviews-btn {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 20px;
+}
+.reviews-box {
+	&__item {
+		padding: 10px 0;
+		border-bottom: 1px solid $small-greey;
+		& .item__top {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			@media screen and (max-width: 580px) {
+				flex-direction: column;
+			}
+			&-box {
+				display: flex;
+				align-items: center;
+				@media screen and (max-width: 580px) {
+					flex-wrap: wrap;
+				}
+				width: 100%;
+				& .rating-box {
+					align-items: center;
+				}
+				& .name {
+					margin-left: 20px;
+					@media screen and (max-width: 580px) {
+						order: 1;
+						width: 100%;
+						display: block;
+					}
+				}
+			}
+			& .date {
+				flex: 1 1 auto;
+				text-align: right;
+			}
+		}
+		& .item__mid {
+			margin: 10px 0;
+		}
+		& .item__bot {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			@media screen and (max-width: 425px) {
+				align-items: baseline;
+			}
+			& .response-counter {
+				position: relative;
+				margin-left: 25px;
+				padding: 0;
+				box-sizing: border-box;
+				border: none;
+				outline: none;
+				background: $white;
+				font-family: $R-r;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 20px;
+				color: $greey;
+				transition: all 0.2s linear;
+				cursor: pointer;
+				&:hover {
+					color: $blue-text;
+				}
+				&.active {
+					color: $blue-text;
+				}
+				&::before {
+					content: "";
+					position: absolute;
+					left: -25px;
+					width: 20px;
+					height: 10px;
+					display: block;
+					border-bottom: 1px solid $greey;
+					border-left: 1px solid $greey;
+				}
+			}
+			& .box-right {
+				display: flex;
+				align-items: center;
+				margin-left: auto;
+				@media screen and (max-width: 425px) {
+					flex-wrap: wrap;
+					justify-content: flex-end;
+					width: 60%;
+				}
+				& .btn-dots {
+					margin-right: 50px;
+					@media screen and (max-width: 580px) {
+						margin-right: 10px;
+					}
+					@media screen and (max-width: 425px) {
+						margin-bottom: 10px;
+					}
+				}
+				& .like {
+					&-item {
+						margin-left: 10px;
+						cursor: pointer;
+						transition: all 0.2s linear;
+						& i.icon-like::before {
+							color: $greey;
+							transition: all 0.2s linear;
+						}
+						&:hover {
+							color: $blue-text;
+						}
+						&:hover i.icon-like::before {
+							color: $blue-text;
+						}
+					}
+				}
+			}
+		}
+		& .item__reviews-box {
+			margin-left: 35px;
+			& .response {
+				margin: 15px 0;
+				padding-left: 10px;
+				border-left: 2px solid transparent;
+				position: relative;
+				&::before {
+					content: "";
+					height: 100%;
+					width: 2px;
+					left: 0;
+					display: block;
+					position: absolute;
+					border-left: 2px solid $blue;
+				}
+			}
+		}
+	}
+}
+.analogs {
+	&__box-title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 15px;
+		@media screen and (max-width: 580px) {
+			flex-wrap: wrap;
+			margin-bottom: 25px;
+		}
+		& .item {
+			width: 40%;
+			@media screen and (max-width: 1024px) {
+				width: 100%;
+			}
+			@media screen and (max-width: 580px) {
+				margin-bottom: 10px;
+			}
+		}
+		& .filter-box {
+			display: flex;
+			grid-gap: 15px;
+			align-items: center;
+			@media screen and (max-width: 1024px) {
+				flex-wrap: wrap;
+			}
+			@media screen and (max-width: 580px) {
+				margin-top: 25px;
+				grid-gap: 10px;
+			}
+			& .select2-container {
+				@media screen and (max-width: 580px) {
+					width: 160px;
+				}
+				@media screen and (max-width: 425px) {
+					width: 150px;
+				}
+			}
+			&__item {
+				font-family: $R-r;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				color: $greey;
+				cursor: pointer;
+				width: 180px;
+				height: 40px;
+				padding: 0 15px;
+				outline: none;
+				border: 1px solid $greey;
+				background-color: $white;
+				box-shadow: 0 0 2px rgba(176, 194, 213, 0.56);
+				@media screen and (max-width: 580px) {
+					padding: 0 5px;
+					width: 160px;
+				}
+				@media screen and (max-width: 425px) {
+					width: 150px;
+				}
+				&:first-child {
+					margin-right: 15px;
+					@media screen and (max-width: 1024px) {
+						margin-right: 0;
+						margin-bottom: 10px;
+					}
+					@media screen and (max-width: 580px) {
+						margin-right: 10px;
+						margin-bottom: 0;
+					}
+				}
+				&:last-child {
+					@media screen and (max-width: 425px) {
+						width: 130px;
+					}
+				}
+			}
+		}
+	}
+	&__table {
+		display: block;
+		& .table-head {
+			padding: 0 10px;
+			box-sizing: border-box;
+			background-color: $lite-greey;
+			display: block;
+			@media screen and (max-width: 425px) {
+				margin: 0 -10px;
+			}
+			&__top {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				box-sizing: border-box;
+				padding: 15px 0;
+				& th {
+					width: 20%;
+					text-align: left;
+					@media screen and (max-width: 580px) {
+						width: 35%;
+					}
+				}
+				& th:first-child {
+					width: 70%;
+					@media screen and (max-width: 580px) {
+						width: 40%;
+					}
+				}
+				& th:last-child {
+					width: 10%;
+					@media screen and (max-width: 580px) {
+						width: 20%;
+					}
+				}
+			}
+		}
+		& .table-body {
+			padding: 0 10px;
+			box-sizing: border-box;
+			display: block;
+			@media screen and (max-width: 425px) {
+				margin: 0 -10px;
+			}
+			&__columm {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				box-sizing: border-box;
+				padding: 10px 0;
+				& td {
+					flex: 0 1 20%;
+					text-align: left;
+					@media screen and (max-width: 580px) {
+						flex: 0 1 35%;
+					}
+				}
+				& td:first-child {
+					flex: 0 1 70%;
+					display: flex;
+					grid-gap: 5px 10px;
+					flex-direction: row;
+					flex-wrap: wrap;
+					@media screen and (max-width: 580px) {
+						flex: 0 1 40%;
+						flex-direction: column;
+					}
+					& a {
+						font-family: $R-r;
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 20px;
+						color: $blue-text;
+						cursor: pointer;
+						text-decoration: underline;
+						text-decoration-style: dotted;
+						&:hover {
+							color: $lite-blue;
+						}
+					}
+					& .managers-articul {
+						width: 100%;
+					}
+				}
+				& td:last-child {
+					flex: 0 1 10%;
+					@media screen and (max-width: 580px) {
+						flex: 0 1 20%;
+					}
+				}
+			}
+		}
+	}
+	&__box-bot {
+		margin-top: 15px;
+		border-top: 1px solid $lite-greey;
+		padding-top: 10px;
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media screen and (max-width: 580px) {
+			flex-direction: column-reverse;
+			align-items: flex-end;
+		}
+		& .box {
+			display: flex;
+			align-items: center;
+			@media screen and (max-width: 580px) {
+				margin-bottom: 15px;
+				justify-content: space-between;
+				width: 100%;
+			}
+			&__left {
+				margin-right: 60px;
+				@media screen and (max-width: 1024px) {
+					margin-right: 10px;
+				}
+				@media screen and (max-width: 580px) {
+					margin: 0;
+				}
+			}
+			&__right {
+			}
+		}
+	}
+}

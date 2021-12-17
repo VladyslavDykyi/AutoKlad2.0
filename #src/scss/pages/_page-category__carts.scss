@@ -1,0 +1,24 @@
+.category-page__container-carts {
+	& .row-towar__container {
+		margin-bottom: 20px;
+	}
+	&__foot {
+		display: flex;
+		align-items: center;
+		& .paginations {
+			margin-left: auto;
+			@media screen and (max-width: 580px) {
+				margin-bottom: 0;
+			}
+		}
+	}
+	@media screen and (max-width: 1280px) {
+		& .row-towar__container {
+			grid-gap: 10px;
+			justify-content: flex-start;
+			&-item__info {
+				height: 340px;
+			}
+		}
+	}
+}

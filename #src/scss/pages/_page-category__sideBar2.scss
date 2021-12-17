@@ -1,0 +1,68 @@
+.category-page__container-sideBar2 {
+	margin-top: 20px;
+	background: #ffffff;
+	border: 1px solid #f6f6f6;
+	box-sizing: border-box;
+	@media screen and (max-width: 768px) {
+		margin-top: 0px;
+	}
+	&.active {
+		& .mobDrop-car {
+			&.pointer::after {
+				transform: rotate(135deg);
+			}
+		}
+	}
+	& .mobDrop-car {
+		padding: 10px;
+		border-radius: 2px;
+		box-sizing: border-box;
+		background-color: $blue;
+		margin-bottom: 10px;
+		display: none;
+		@media screen and (max-width: 768px) {
+			display: block;
+			margin-bottom: 0px;
+		}
+		&.pointer::after {
+			border-color: $white;
+			right: 10px;
+		}
+		&__box {
+		}
+	}
+	&__title {
+		padding: 15px 20px 0px 20px;
+		box-sizing: border-box;
+		color: $black2;
+	}
+	& picture {
+	}
+	&__params {
+		padding: 5px 10px 10px 20px;
+		box-sizing: border-box;
+		&-item {
+			display: flex;
+			margin-bottom: 13px;
+			& .name {
+				width: 45%;
+				font-family: $R-r;
+				font-weight: 400;
+				font-size: 12px;
+				line-height: 18px;
+				color: $dark-green;
+			}
+			& .params2 {
+				width: 55%;
+				font-family: $R-r;
+				font-weight: 400;
+				font-size: 12px;
+				line-height: 18px;
+				color: $black2;
+			}
+		}
+		& .category-page__container-sideBar2__params-item:last-child {
+			margin-bottom: 0px;
+		}
+	}
+}

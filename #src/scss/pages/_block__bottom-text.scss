@@ -1,0 +1,82 @@
+.bottom-text {
+	background-color: $lite-greey;
+	padding: 20px 0px 80px;
+	box-sizing: border-box;
+	&__container {
+		& div {
+			font-family: $R-r;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 25px;
+			color: $greey;
+			text-align: justify;
+		}
+		& p {
+			font-family: $R-r;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 25px;
+			color: $greey;
+			text-align: justify;
+		}
+		& b,
+		strong {
+			font-family: $R-b;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 25px;
+			color: $greey;
+		}
+		& h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: $R-r;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 25px;
+			color: $greey;
+		}
+		& ul {
+			list-style-type: disc;
+			padding-left: 20px;
+			box-sizing: border-box;
+			& li {
+				font-family: $R-r;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 25px;
+				color: $greey;
+				text-align: justify;
+				list-style-type: disc;
+				margin: 2px;
+			}
+		}
+		& img {
+			width: auto;
+			height: auto;
+			margin: 20px 0px 20px 20px;
+		}
+		& a {
+			font-family: $R-r;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 25px;
+			color: $blue-text;
+			margin: 5px 0px;
+			display: inline-block;
+			&:hover {
+				color: $lite-blue;
+			}
+		}
+		&-btn {
+			display: flex;
+			justify-content: center;
+			margin-top: 30px;
+			& button {
+				text-transform: none;
+			}
+		}
+	}
+}

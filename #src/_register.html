@@ -1,0 +1,88 @@
+<div class="registration">
+	<h2 class="title-T">Регистрация</h2>
+
+	<form class="registration-form" action="#">
+		<div class="container-title">
+			<label class="starRed text-r text-r-f16-l25">Логин</label>
+		</div>
+		<div class="registration-form-login">
+			<div class="login-top">
+				<p class="text-r text-r-f14-l20 text-r-greey">Вашим логином является номер телефона. Он вводится без
+					пробелов, тире и скобок. Пример: 0670000000</p>
+				<input class="inputForm inputForm-xl" type="tel" placeholder="Введите номер телефона" required>
+				<button class="btn btn-big btn-whiteBlue">Получить SMS</button>
+				<input class="inputForm inputForm-w160" type="text" placeholder="Введите код" required>
+				<button class="btn btn-big" disabled>Продолжить</button>
+			</div>
+			<div class="login-bottom ">
+				<div class="login-bottom-box">
+					<label class="starRed  text-r text-r-f16-l25" for="password">Пароль</label>
+					<input class="inputForm inputForm-xl" id="password" type="password" required>
+				</div>
+				<div class="login-bottom-box">
+					<label class="starRed  text-r text-r-f16-l25" for="secondPassword">Повтор пароля</label>
+					<input class="inputForm inputForm-xl" id="secondPassword" type="password" required>
+				</div>
+				<div class="login-bottom-box">
+					<label class="starRed  text-r text-r-f16-l25">Страна проживания</label>
+					<select class="js-example-basic-single" required>
+						<option value="0" selected disabled>Выберите страну</option>
+						<option value="1">--Украина-</option>
+					</select>
+				</div>
+				<div class="login-bottom-box">
+					<button class="btn btn-big" >Продолжить</button>
+				</div>
+			</div>
+		</div>
+		<div class="registration-form-cont none">
+			<div class="container-inputs">
+				<input class="inputForm inputForm-xl" type="text" placeholder="Имя" required>
+				<input class="inputForm inputForm-xl" type="text" placeholder="Фамилия" required>
+				<input class="inputForm inputForm-xl" type="text" placeholder="Отчество" required>
+				<input class="inputForm inputForm-xl" type="email" placeholder="Email" required>
+			</div>
+			<div class="container-title">
+				<label class="text-r text-r-f16-l25">Адресс доставки:</label>
+			</div>
+			<div class="container-checkout">
+				<div class="box-top">
+					<select class="js-example-basic-single" >
+						<option value="0" selected disabled>Выберите область</option>
+						<option value="1">---</option>
+					</select>
+					<select class="js-example-basic-single" >
+						<option value="0" selected disabled>Выберите город</option>
+						<option value="1">---</option>
+					</select>
+					<div class="box-city">
+						<label class="text-r text-r-f16-l25" for="nonList">Города нет в списке?</label>
+						<input class="inputForm inputForm-xl" type="text" id="nonList" placeholder="Укажите свой">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="registration-form-foot none">
+			<div class="checkout-foot-checkbox">
+				<label class="check option">
+					<input class="check__input" type="checkbox">
+					<span class="check__box"></span>
+					<p class="text-r text-r-f14-l20 text-r-blue">Я согласен с <a class="text-b-dot"
+							href="">Пользовательским
+							соглашением</a>
+					</p>
+				</label>
+				<label class="check option">
+					<input class="check__input" type="checkbox">
+					<span class="check__box"></span>
+					<p class="text-r text-r-f14-l20 text-r-blue">
+						Хочу получать промо-коды и узнавать о спецпредложениях
+					</p>
+				</label>
+			</div>
+			<div class="checkout-foot-btn">
+				<button class="btn btn-bigBB" type="submit" disabled>Зарегистрироваться</button>
+			</div>
+		</div>
+	</form>
+</div>

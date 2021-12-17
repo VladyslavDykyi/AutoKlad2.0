@@ -1,0 +1,110 @@
+.cart-product {
+	&__title-box {
+		grid-area: header1;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 100%;
+		margin-bottom: 20px;
+		& .title-T {
+			width: 80%;
+			@media screen and (max-width: 1024px) {
+				width: 70%;
+			}
+			@media screen and (max-width: 768px) {
+				width: 100%;
+			}
+		}
+		& .vendor-code {
+			background: $lite-greey;
+			border-radius: 2px;
+			padding: 5px 15px;
+			@media screen and (max-width: 768px) {
+				display: none;
+			}
+		}
+		& .box-r {
+			display: flex;
+			align-items: center;
+			margin-top: 20px;
+			& .rating-box {
+				align-items: center;
+				& .text-r {
+					margin-left: 8px;
+				}
+			}
+			& span.text-r-blue {
+				margin-left: 20px;
+			}
+		}
+	}
+	&__box {
+		display: grid;
+		grid-template-areas:
+			"header1 header1"
+			"conent1 conent2"
+			"conent3 conent2"
+			"conent4 conent2"; // conent4 фиксит баг
+		grid-template-columns: 70% 30%;
+		@media screen and (max-width: 768px) {
+			grid-template-areas:
+				"header1"
+				"conent1"
+				"conent3"
+				"conent2";
+			grid-template-columns: 100%;
+		}
+		&-1 {
+			grid-area: conent1;
+			display: flex;
+			margin-right: 20px;
+			height: 100%;
+			@media screen and (max-width: 1024px) {
+				margin-right: 0px;
+			}
+			@media screen and (max-width: 768px) {
+				flex-direction: column;
+			}
+			& .sliders {
+				display: flex;
+				justify-content: space-between;
+				position: relative;
+				& .rec {
+					position: absolute;
+					top: 0;
+					right: 0;
+					z-index: 10;
+				}
+				@media screen and (max-width: 768px) {
+					flex-direction: column-reverse;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+		&-2 {
+			grid-area: conent2;
+			background: $lite-greey;
+			border-radius: 2px;
+			padding: 15px 20px;
+			@media screen and (max-width: 1024px) {
+				padding: 5px 5px;
+			}
+			@media screen and (max-width: 768px) {
+				background: $white;
+				padding-top: 0px;
+			}
+			@media screen and (max-width: 425px) {
+				padding: 0;
+			}
+		}
+		&-3 {
+			grid-area: conent3;
+			margin: 20px 20px 0px 0px;
+			@media screen and (max-width: 768px) {
+				margin: 0px;
+			}
+		}
+	}
+}

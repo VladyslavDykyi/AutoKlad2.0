@@ -1,0 +1,30 @@
+$white: #fff;
+$lite-greey: #f6f6f6;
+$small-greey: #939393;
+$smale-grey: #E9E9E9;
+$greey: #777;
+$dark-green: #333;
+$black: #000;
+$black2: #131313;
+$lite-blue: #00acde;
+$blue: #008bcc;
+$blue-text: #017cc2;
+$green: #3bb878;
+$red: #ff0000;
+$yeallow: #fab73d;
+$orange: #F2994A;
+
+$R-b: "Roboto-Bold";
+$R-m: "Roboto-Medium";
+$R-r: "Roboto-Regular";
+// mainPage //
+@import "_block__mainPage";
+@import "_block__row-towar";
+@import "_block__auto-popular";
+@import "_block__auto-parts";
+@import "_block__news-auto";
+@import "_block__bottom-text";
+@import "_block__category";
+@import "_block__slider-banners";
+@import "_block__text-bot";
+// mainPage //

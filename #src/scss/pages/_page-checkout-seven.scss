@@ -1,0 +1,14 @@
+.checkout-foot {
+	margin-bottom: 80px;
+	&-checkbox {
+		& .option {
+			align-items: end;
+		}
+	}
+	&-btn {
+		margin-top: 20px;
+		& button:disabled {
+			background-color: $greey;
+		}
+	}
+}

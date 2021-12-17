@@ -1,0 +1,106 @@
+.auto-parts {
+	&__head {
+		display: flex;
+		align-items: center;
+		margin-bottom: 50px;
+		@media screen and (max-width: 768px) {
+			flex-wrap: wrap;
+		}
+		& .btn:nth-child(2) {
+			margin-left: auto;
+		}
+		&-title {
+		}
+		&-link {
+			text-transform: none;
+			@media screen and (max-width: 768px) {
+				margin: 0px 0px 20px auto;
+			}
+			@media screen and (max-width: 425px) {
+				margin: 20px 0px 20px auto;
+			}
+		}
+		&-btn {
+			margin-left: 30px;
+			text-transform: none;
+			@media screen and (max-width: 768px) {
+				margin: 0px 0px 20px auto;
+			}
+		}
+	}
+	&__container {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		grid-gap: 26.6717px;
+		margin-bottom: 80px;
+		@media screen and (max-width: 1280px) {
+			margin: 0 auto 80px;
+			max-width: 849px;
+		}
+		@media screen and (max-width: 1024px) {
+			max-width: 557px;
+			margin-bottom: 40px;
+		}
+		@media screen and (max-width: 580px) {
+			max-width: 265px;
+		}
+		&-item {
+			display: block;
+			width: 265px;
+			padding: 25px 20px;
+			background: $white;
+			border: 1px solid $lite-greey;
+			box-sizing: border-box;
+			box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+			position: relative;
+			&__btn {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				height: 100%;
+				&:hover .btn-dots {
+					color: $lite-blue;
+					border-color: $lite-blue;
+				}
+				&-title {
+					margin-bottom: 10px;
+					width: 100%;
+					text-align: start;
+				}
+				&-text {
+					display: inline;
+					width: max-content;
+				}
+				&.active {
+					& .auto-parts__container-item__btn-title.pointer::after {
+						transform: rotate(135deg);
+					}
+				}
+			}
+			&__dropList {
+				position: absolute;
+				width: 265px;
+				left: -1px;
+				padding: 5px 20px 25px 25px;
+				background: $white;
+				border: 1px solid $lite-greey;
+				border-top: 1px solid transparent;
+				box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+				overflow: hidden;
+				box-sizing: border-box;
+				z-index: 5;
+				&-item {
+					margin-bottom: 2px;
+					& .link {
+						border-bottom: 1px dotted transparent;
+						&:hover {
+							color: $lite-blue;
+							border-bottom: 1px dotted $lite-blue;
+						}
+					}
+				}
+			}
+		}
+	}
+}

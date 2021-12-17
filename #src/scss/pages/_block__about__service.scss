@@ -1,0 +1,44 @@
+.about-service {
+	margin: 70px 0px 40px;
+	&__title {
+		width: 65%;
+		margin: 0 auto;
+		text-align: center;
+		@media screen and (max-width: 768px) {
+			width: 100%;
+			font-size: 18px;
+			line-height: 24px;
+		}
+	}
+	&__container {
+		margin-top: 50px;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		@media screen and (max-width: 1024px) {
+			justify-content: space-evenly;
+		}
+		&-item {
+			width: 240px;
+			height: 160px;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			margin-bottom: 30px;
+			@media screen and (max-width: 1024px) {
+				width: 260px;
+			}
+			& i::before {
+				font-size: 42px;
+			}
+			& .icon-price::before {
+				font-size: 62px;
+			}
+			& .text-r {
+				margin-top: 20px;
+				text-align: center;
+			}
+		}
+	}
+}

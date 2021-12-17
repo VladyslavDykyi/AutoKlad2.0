@@ -1,0 +1,329 @@
+.origin-catalog-sideBar {
+	& .sideBar-title {
+		font-family: $R-b;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 24px;
+		text-transform: uppercase;
+		color: $dark-green;
+	}
+	
+	& .title-container {
+		margin-top: 15px;
+		border-top: 1px solid $greey;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media screen and (max-width: 768px) {
+			justify-content: flex-start;
+		}
+	}
+	
+	.title-tab {
+		border-top: 2px solid transparent;
+		padding: 6px 15px;
+		font-family: $R-r;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		color: $greey;
+		
+		&.active {
+			border-top: 2px solid $blue;
+			color: $dark-green;
+		}
+		
+	}
+	
+	& .sideBar-form {
+		margin-top: 30px;
+		display: flex;
+		align-items: center;
+	}
+}
+
+.sideBar-menu {
+	margin-top: 30px;
+	padding-left: 20px;
+	
+	& h5 {
+		cursor: pointer;
+	}
+	
+	& h6 {
+		cursor: pointer;
+	}
+	
+	&-item {
+		position: relative;
+		height: 100%;
+		
+		& .line {
+			position: absolute;
+			display: block;
+			height: 100%;
+			left: -10px;
+			top: 0;
+		}
+	}
+}
+
+.second-menu {
+	padding-left: 20px;
+	display: none;
+	
+	&-item {
+		position: relative;
+		height: 100%;
+		
+		& .line {
+			position: absolute;
+			display: block;
+			height: 100%;
+			left: -10px;
+			top: 0;
+		}
+	}
+}
+
+.third-menu {
+	display: none;
+	padding-left: 20px;
+	
+	&-item {
+		position: relative;
+		height: 100%;
+		
+		& .line {
+			position: absolute;
+			display: block;
+			height: 100%;
+			left: -10px;
+			top: 0;
+		}
+	}
+}
+
+.fourth-menu {
+	display: none;
+	padding-left: 20px;
+	
+	&-item {
+		position: relative;
+		height: 100%;
+		
+		& .line {
+			position: absolute;
+			display: block;
+			height: 100%;
+			left: -10px;
+			top: 0;
+		}
+	}
+}
+
+.fifth-menu {
+	display: none;
+	padding-left: 20px;
+	
+	&-item {
+		position: relative;
+		height: 100%;
+		
+		& .line {
+			position: absolute;
+			display: block;
+			height: 100%;
+			left: -10px;
+			top: 0;
+		}
+	}
+}
+
+.first-box {
+	position: relative;
+	
+	&.active {
+		& .plus {
+			display: none;
+		}
+		
+		& .minus {
+			display: block;
+		}
+	}
+	
+	& .plus {
+		display: block;
+		position: absolute;
+		left: -10px;
+		top: 8px;
+	}
+	
+	& .minus {
+		display: none;
+		position: absolute;
+		left: -10px;
+		top: 8px;
+	}
+	
+	& .dot {
+		position: absolute;
+		left: -11px;
+		top: 7px;
+	}
+	
+	&-link {
+		font-family: $R-r;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
+		color: $black;
+	}
+}
+
+.second-box {
+	position: relative;
+	
+	&.active {
+		& .plus {
+			display: none;
+		}
+		
+		& .minus {
+			display: block;
+		}
+		
+	}
+	
+	& .plus {
+		display: block;
+		position: absolute;
+		left: -10px;
+		top: 8px;
+	}
+	
+	& .minus {
+		display: none;
+		position: absolute;
+		left: -10px;
+		top: 8px;
+	}
+	
+	& .dot {
+		position: absolute;
+		left: -11px;
+		top: 7px;
+	}
+	
+	&-link {
+		font-family: $R-r;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
+		color: $black;
+	}
+}
+
+.third-box {
+	position: relative;
+	
+	&.active {
+		& .plus {
+			display: none;
+		}
+		
+		& .minus {
+			display: block;
+		}
+	}
+	
+	& .plus {
+		display: block;
+		position: absolute;
+		left: -10px;
+		top: 8px;
+	}
+	
+	& .minus {
+		display: none;
+		position: absolute;
+		left: -10px;
+		top: 8px;
+	}
+	
+	& .dot {
+		position: absolute;
+		left: -11px;
+		top: 7px;
+	}
+	
+	&-link {
+		font-family: $R-r;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
+		color: $black;
+	}
+}
+
+.fourth-box {
+	position: relative;
+	
+	&.active {
+		& .plus {
+			display: none;
+		}
+		
+		& .minus {
+			display: block;
+		}
+		
+	}
+	
+	& .plus {
+		display: block;
+		position: absolute;
+		left: -10px;
+		top: 8px;
+	}
+	
+	& .minus {
+		display: none;
+		position: absolute;
+		left: -10px;
+		top: 8px;
+	}
+	
+	& .dot {
+		position: absolute;
+		left: -11px;
+		top: 7px;
+	}
+	
+	&-link {
+		font-family: $R-r;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
+		color: $black;
+	}
+}
+
+.fifth-box {
+	position: relative;
+	
+	& .dot {
+		position: absolute;
+		left: -11px;
+		top: 7px;
+	}
+	
+	&-link {
+		font-family: $R-r;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
+		color: $black;
+	}
+}

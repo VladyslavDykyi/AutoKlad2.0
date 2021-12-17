@@ -1,0 +1,225 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../../fonts/icomoon.eot");
+  src: url("../../fonts/icomoon.eot") format("embedded-opentype"), url("../../fonts/icomoon.woff2") format("woff2"),
+  url("../../fonts/icomoon.woff") format("woff"), url("../../img/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-like:before {
+  content: "\e936";
+  color: #008bcc;
+}
+.icon-close:before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-delivery:before {
+  content: "\e901";
+  color: #017bc6;
+}
+.icon-geo:before {
+  content: "\e902";
+  color: #017cc2;
+}
+.icon-yes:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-comparison:before {
+  content: "\e904";
+  color: #008bcc;
+}
+.icon-tile:before {
+  content: "\e905";
+  color: #777;
+}
+.icon-line:before {
+  content: "\e906";
+  color: #777;
+}
+.icon-list:before {
+  content: "\e908";
+  color: #008bcc;
+}
+.icon-price:before {
+  content: "\e909";
+  color: #008bcc;
+}
+.icon-online-shopping:before {
+  content: "\e90a";
+  color: #008bcc;
+}
+.icon-online-payment:before {
+  content: "\e90b";
+  color: #008bcc;
+}
+.icon-delivered:before {
+  content: "\e90c";
+  color: #008bcc;
+}
+.icon-magnifying-lens:before {
+  content: "\e90d";
+  color: #008bcc;
+}
+.icon-call-center:before {
+  content: "\e90e";
+  color: #008bcc;
+}
+.icon-bonus:before {
+  content: "\e90f";
+  color: #008bcc;
+}
+.icon-home-phone:before {
+  content: "\e911";
+  color: #008bcc;
+}
+.icon-mail:before {
+  content: "\e912";
+  color: #008bcc;
+}
+.icon-question:before {
+  content: "\e914";
+  color: #008bcc;
+}
+.icon-like-grey:before {
+  content: "\e915";
+  color: #777;
+}
+.icon-dis-like-grey:before {
+  content: "\e916";
+  color: #777;
+}
+.icon-nova-poshta:before {
+  content: "\e917";
+  color: #ed1c24;
+}
+.icon-danger:before {
+  content: "\e918";
+  color: #3bb878;
+}
+.icon-info:before {
+  content: "\e91a";
+  color: #3bb878;
+}
+.icon-enter:before {
+  content: "\e91b";
+  color: #008bcc;
+}
+.icon-hous:before {
+  content: "\e91c";
+  color: #777;
+}
+.icon-arrowR:before {
+  content: "\e91d";
+  color: #777;
+}
+.icon-fb:before {
+  content: "\e91e";
+  color: #008bcc;
+}
+.icon-Instagram:before {
+  content: "\e91f";
+  color: #008bcc;
+}
+.icon-telega:before {
+  content: "\e920";
+  color: #008bcc;
+}
+.icon-time:before {
+  content: "\e921";
+  color: #fff;
+}
+.icon-Vector-9:before {
+  content: "\e922";
+  color: #fff;
+}
+.icon-burger:before {
+  content: "\e923";
+  color: #fff;
+}
+.icon-search:before {
+  content: "\e924";
+  color: #fff;
+}
+.icon-call:before {
+  content: "\e925";
+  color: #008bcc;
+}
+.icon-favorite:before {
+  content: "\e926";
+  color: #008bcc;
+}
+.icon-cart:before {
+  content: "\e927";
+  color: #008bcc;
+}
+.icon-language:before {
+  content: "\e928";
+  color: #008bcc;
+}
+.icon-userBlue:before {
+  content: "\e929";
+  color: #008bcc;
+}
+.icon-userWhite:before {
+  content: "\e92a";
+  color: #008bcc;
+}
+.icon-editor:before {
+  content: "\e92b";
+  color: #008bcc;
+}
+.icon-cartWhite:before {
+  content: "\e92c";
+  color: #008bcc;
+}
+.icon-auto:before {
+  content: "\e92d";
+  color: #008bcc;
+}
+.icon-tools:before {
+  content: "\e92e";
+  color: #008bcc;
+}
+.icon-boockList:before {
+  content: "\e92f";
+  color: #008bcc;
+}
+.icon-clockBox:before {
+  content: "\e930";
+  color: #008bcc;
+}
+.icon-mail2:before {
+  content: "\e931";
+  color: #008bcc;
+}
+.icon-mailList:before {
+  content: "\e932";
+}
+.icon-repeat:before {
+  content: "\e933";
+}
+.icon-layer:before {
+  content: "\e934";
+}
+.icon-listPen:before {
+  content: "\e935";
+}

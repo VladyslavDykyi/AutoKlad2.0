@@ -1,0 +1,107 @@
+.registration {
+	& input {
+		@media screen and (max-width: 425px) {
+			width: 100%;
+		}
+	}
+	
+	& .select2 {
+		@media screen and (max-width: 425px) {
+			width: 100% !important;
+		}
+	}
+	
+	& h2 {
+		margin-bottom: 45px;
+	}
+	
+	&-form {
+		& .container-title h3 {
+			text-transform: none;
+		}
+		
+		&-login {
+			margin-top: 5px;
+			padding-bottom: 40px;
+			border-bottom: 1px solid $blue;
+			
+			& .login-top {
+				padding-bottom: 15px;
+				display: flex;
+				align-items: center;
+				grid-gap: 25px;
+				@media screen and (max-width: 1280px) {
+					flex-wrap: wrap;
+				}
+				
+				& p {
+					width: 260px;
+				}
+				& button {
+					margin-left: auto;
+					@media screen and (max-width: 1280px) {
+						margin-left: 0;
+					}
+				}
+			}
+			
+			& .login-bottom {
+				padding-top: 15px;
+				display: flex;
+				align-items: flex-end;
+				grid-gap: 25px;
+				@media screen and (max-width: 1280px) {
+					flex-wrap: wrap;
+				}
+				&.dn {
+					display: none;
+				}
+				&-box {
+					display: flex;
+					flex-direction: column;
+					@media screen and (max-width: 425px) {
+						width: 100%;
+					}
+					& label {
+						width: max-content;
+					}
+					& .starRed {
+						margin-bottom: 10px;
+					}
+					
+					& .js-example-basic-single {
+						width: 260px;
+					}
+				}
+				& .login-bottom-box:last-child {
+					margin-left: auto;
+					@media screen and (max-width: 1280px) {
+						margin-left: 0;
+					}
+				}
+			}
+		}
+		
+		&-cont {
+			& .container-inputs {
+				margin-top: 40px;
+			}
+			
+			& .container-checkout {
+				margin-top: 15px;
+			}
+		}
+		
+		&-foot {
+			margin-bottom: 80px;
+			padding-top: 40px;
+			border-top: 1px solid $blue;
+			
+			& .checkout-foot-checkbox {
+				display: flex;
+				flex-direction: column;
+				grid-gap: 20px;
+			}
+		}
+	}
+}

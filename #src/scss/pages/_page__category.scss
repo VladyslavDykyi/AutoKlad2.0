@@ -1,0 +1,61 @@
+.category-page {
+	&__container {
+		display: grid;
+		grid-template-areas:
+			"header1 header1"
+			"sideBar carts"
+			"sideBar2 carts"
+			"conent4 carts"
+			"conent4 carts"; // conent4 фиксит баг
+		grid-template-columns: 23.0276% calc(76.9724% - 30px);
+		grid-gap: 20px 30px;
+		@media screen and (max-width: 1280px) {
+			grid-template-columns: 26.792% calc(73.208% - 10px);
+			grid-gap: 20px 10px;
+		}
+		@media screen and (max-width: 1024px) {
+			grid-template-columns: 35.977% calc(64.023% - 10px);
+		}
+		@media screen and (max-width: 768px) {
+			grid-template-areas:
+				"header1"
+				"sideBar2"
+				"sideBar"
+				"carts";
+			grid-template-columns: 100%;
+		}
+		@media screen and (max-width: 580px) {
+			grid-gap: 0px;
+		}
+		&-head {
+			grid-area: header1;
+		}
+		&-sideBar {
+			grid-area: sideBar;
+		}
+		&-sideBar2 {
+			grid-area: sideBar2;
+		}
+		&-carts {
+			grid-area: carts;
+			// margin-top: 55px;
+			// @media screen and (max-width: 580px) {
+			// 	margin-top: 20px;
+			// }
+			& .row-towar__container-item {
+				width: 30.974%;
+				@media screen and (max-width: 1280px) {
+					width: 32.3972%;
+					padding: 6px;
+				}
+				@media screen and (max-width: 1024px) {
+					width: 48.9%;
+					padding: 15px;
+				}
+				@media screen and (max-width: 580px) {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
