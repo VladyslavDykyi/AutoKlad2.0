@@ -108,3 +108,8 @@ if ($(window).width() <= 768) {
 		}
 	});
 }
+$(document).ready(function() {
+	if ($(window).width() <= 769) {
+		$('.sidebar-foot').appendTo('.category-page__container-carts');
+	}
+})
