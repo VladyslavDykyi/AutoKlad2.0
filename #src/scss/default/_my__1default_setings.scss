@@ -37,6 +37,11 @@ button {
 .visible-none {
 	display: none;
 }
+.visible-none-mob {
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+}
 a {
 	text-decoration: none;
 }
