@@ -1037,7 +1037,10 @@
 			& #container_podbor_detail {
 				& .container-titls {
 					& .content {
-						right: -120px;
+						right: -204px;
+						@media screen and (max-width: 580px){
+							right: calc(50% - 150px);
+						}
 					}
 				}
 			}
