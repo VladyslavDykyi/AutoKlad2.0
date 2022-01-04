@@ -26,3 +26,29 @@ function slide(e) {
 		dropDown(e);
 	}
 }
+
+function mobDropMenu(e) {
+	if($(e).hasClass('active')) {
+		closeMenu();
+	} else {
+		closeMenu();
+		dropMenu(e);
+	}
+}
+function dropMenu(e) {
+	$(e).addClass('active');
+	$(e).siblings('.mob-drop-menu-cont').slideDown();
+}
+function closeMenu() {
+	$('.mob-drop-menu').removeClass('active');
+	$('.mob-drop-menu-cont').slideUp();
+}
+$(document).mouseup(function (e) {
+	if (!$('.mob-drop-menu').is(e.target) // если клик был не по нашему блоку
+		&& $('.mob-drop-menu').has(e.target).length === 0 &&
+		!$('.mob-drop-menu-cont').is(e.target) // если клик был не по нашему блоку
+		&& $('.mob-drop-menu-cont').has(e.target).length === 0) { // и не по его дочерним элементам
+		$('.mob-drop-menu').removeClass('active');
+		$('.mob-drop-menu-cont').slideUp();
+	}
+});
