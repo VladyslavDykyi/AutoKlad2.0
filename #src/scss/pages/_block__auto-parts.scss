@@ -14,17 +14,17 @@
 		&-link {
 			text-transform: none;
 			@media screen and (max-width: 768px) {
-				margin: 0px 0px 20px auto;
+				margin: 0 0 20px auto;
 			}
 			@media screen and (max-width: 425px) {
-				margin: 20px 0px 20px auto;
+				margin: 20px 0 20px auto;
 			}
 		}
 		&-btn {
 			margin-left: 30px;
 			text-transform: none;
 			@media screen and (max-width: 768px) {
-				margin: 0px 0px 20px auto;
+				margin: 0 0 20px auto;
 			}
 		}
 	}
@@ -52,7 +52,7 @@
 			background: $white;
 			border: 1px solid $lite-greey;
 			box-sizing: border-box;
-			box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+			box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
 			position: relative;
 			&__btn {
 				display: flex;
@@ -67,8 +67,9 @@
 					margin-bottom: 10px;
 					width: 100%;
 					text-align: start;
-					padding-right: 20px;
-					box-sizing: border-box;
+					&:after {
+						top: 150%;
+					}
 				}
 				&-text {
 					display: inline;
@@ -88,7 +89,7 @@
 				background: $white;
 				border: 1px solid $lite-greey;
 				border-top: 1px solid transparent;
-				box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+				box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25);
 				overflow: hidden;
 				box-sizing: border-box;
 				z-index: 5;

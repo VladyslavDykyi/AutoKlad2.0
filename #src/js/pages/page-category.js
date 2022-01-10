@@ -1,7 +1,7 @@
 
 
 function dropCatalog33(elem) {
-	const param = $(elem).parent('.sidebar-content__box');
+	const param = $(elem).parent().parent('.sidebar-content__box');
 	if ($(param).hasClass('active')) {
 		$(param)
 			.removeClass('active');
