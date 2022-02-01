@@ -11,7 +11,6 @@
 				width: 100%;
 				padding-bottom: 10px;
 				border-bottom: 1px solid $small-greey;
-				box-sizing: border-box;
 				@media screen and (max-width: 768px) {
 					margin: 10px 0 0;
 				}
@@ -26,13 +25,11 @@
 				&__item {
 					padding: 7px 0;
 					border-bottom: 1px solid $small-greey;
-					box-sizing: border-box;
 					& .pointer:hover::after {
 						border-color: $blue-text;
 					}
 					& .content__non {
 						padding: 10px 42px 0 0;
-						box-sizing: border-box;
 						@media screen and (max-width: 1280px) {
 							padding: 10px 30px 0 0;
 						}
@@ -81,17 +78,15 @@
 		& .items-box {
 			margin-bottom: 45px;
 			&__item {
-				padding: 7px 0px;
+				padding: 7px 0;
 				border-bottom: 1px solid $small-greey;
-				box-sizing: border-box;
 				& .content__non {
-					padding: 10px 50px 0px 0px;
-					box-sizing: border-box;
+					padding: 10px 50px 0 0;
 					@media screen and (max-width: 1280px) {
 						padding: 10px 30px 0 0;
 					}
 					@media screen and (max-width: 1024px) {
-						padding: 10px 0px 0 0;
+						padding: 10px 0 0 0;
 					}
 					&-box__text {
 						display: flex;
@@ -132,9 +127,8 @@
 				flex-wrap: wrap;
 				margin-bottom: 40px;
 				@media screen and (max-width: 768px) {
-					margin-bottom: 0px;
+					margin-bottom: 0;
 					border-bottom: 1px solid $small-greey;
-					box-sizing: border-box;
 				}
 				& .title {
 					font-family: $R-r;
@@ -162,7 +156,6 @@
 							transform: rotate(-45deg);
 							border-bottom: 2px solid $blue;
 							border-left: 2px solid $blue;
-							box-sizing: border-box;
 							width: 10px;
 							height: 10px;
 							display: block;

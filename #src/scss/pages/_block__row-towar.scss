@@ -1,7 +1,7 @@
 .row-towar {
 	&__head {
 		display: flex;
-		margin-bottom: 50px;
+		margin-bottom: 10px;
 		@media screen and (max-width: 580px) {
 			flex-direction: column;
 		}
@@ -36,7 +36,6 @@
 			padding: 15px;
 			background: $white;
 			border: 1px solid $lite-greey;
-			box-sizing: border-box;
 			transition: all 0.2s linear;
 			@media screen and (max-width: 1024px) {
 				width: 36%;
@@ -61,7 +60,6 @@
 			& .wrapper2 {
 				position: absolute;
 				padding: 15px;
-				box-sizing: border-box;
 				transition: all 0.2s linear;
 				@media screen and (max-width: 580px) {
 					width: 100%;

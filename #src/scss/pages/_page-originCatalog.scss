@@ -21,7 +21,6 @@
 	&-sideBar {
 		width: 265px;
 		min-width: 265px;
-		box-sizing: border-box;
 		grid-area: conent1;
 		@media screen and (max-width: 768px) {
 			width: 100%;

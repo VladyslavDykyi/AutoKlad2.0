@@ -14,8 +14,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		box-sizing: border-box;
-		padding: 6px 0px 3px;
+		padding: 6px 0 3px;
 		position: relative;
 		z-index: 150;
 		@media screen and (max-width: 1024px) {
@@ -84,7 +83,6 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: 9px 9px;
-		box-sizing: border-box;
 		position: relative;
 		z-index: 100;
 		@media screen and (max-width: 1024px) {
@@ -229,7 +227,7 @@
 		}
 		// background-color: $white;
 		padding: 10px 20px 10px 90px;
-		box-sizing: border-box;
+		
 		position: relative;
 		z-index: 150;
 		@media screen and (max-width: 425px) {
@@ -254,7 +252,7 @@
 				align-items: center;
 				padding: 0;
 				border: 1px solid $blue;
-				box-sizing: border-box;
+				
 				& i {
 					width: 30px;
 					height: 30px;
@@ -316,7 +314,7 @@
 		}
 		//background: $black2;
 		padding: 10px 20px 10px 90px;
-		box-sizing: border-box;
+		
 		position: relative;
 		z-index: 50;
 		@media screen and (max-width: 425px) {
@@ -387,7 +385,7 @@
 	top: 41px;
 	left: -15px;
 	padding: 10px 25px 10px 15px;
-	box-sizing: border-box;
+	
 	display: none;
 	overflow: hidden;
 	&.active {
@@ -398,7 +396,7 @@
 	}
 	&-item {
 		padding-bottom: 10px;
-		box-sizing: border-box;
+		
 		display: flex;
 		align-items: center;
 		& img {
@@ -423,7 +421,7 @@
 	&__level2 {
 		background-color: $white;
 		padding: 10px 15px 10px 15px;
-		box-sizing: border-box;
+		
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -456,7 +454,7 @@
 	& .drop__catalog__level2-item:first-child {
 		padding-bottom: 10px;
 		border-bottom: 1px solid $lite-greey;
-		box-sizing: border-box;
+		
 		display: flex;
 		cursor: default;
 		& .text-cat {
@@ -470,7 +468,7 @@
 	& .drop__catalog__level2-item:last-child {
 		padding-top: 10px;
 		border-top: 1px solid $lite-greey;
-		box-sizing: border-box;
+		
 		display: flex;
 		font-family: $R-r;
 		font-weight: 400;
@@ -489,7 +487,7 @@
 		padding-bottom: 10px;
 		margin-bottom: 10px;
 		border-bottom: 1px solid $lite-greey;
-		box-sizing: border-box;
+		
 	}
 }
 .catalog-Mobil__drop {
@@ -499,7 +497,6 @@
 	top: 42px;
 	left: -90px;
 	z-index: 2000;
-	box-sizing: border-box;
 	overflow-y: auto;
 	overflow-x: hidden;
 	height: calc(100vh - 94px);
@@ -514,18 +511,18 @@
 	}
 	&-cont {
 		padding: 10px 25px 0 15px;
-		width: 220px;
+		width: 270px;
 		overflow: hidden;
 		& .drop__catalog-item:nth-child(13) {
 			padding-bottom: 10px;
 			margin-bottom: 10px;
 			border-bottom: 1px solid $lite-greey;
-			box-sizing: border-box;
+			
 		}
 		& .drop__catalog__level2-item:first-child {
 			padding-bottom: 10px;
 			border-bottom: 1px solid $lite-greey;
-			box-sizing: border-box;
+			
 			display: flex;
 			cursor: default;
 			& .text-cat {
@@ -539,7 +536,7 @@
 		& .drop__catalog__level2-item:last-child {
 			padding-top: 10px;
 			border-top: 1px solid $lite-greey;
-			box-sizing: border-box;
+			
 			display: flex;
 			font-family: $R-r;
 			font-weight: 400;
@@ -559,7 +556,7 @@
 		border-top: 1px solid $lite-greey;
 		padding: 15px 25px 75px 15px;
 		margin-top: 1px;
-		box-sizing: border-box;
+		
 		& .nav-box {
 			&__item {
 				margin-bottom: 10px;
@@ -582,7 +579,7 @@
 		width: 100%;
 		background-color: $black;
 		padding: 15px 25px 15px 15px;
-		box-sizing: border-box;
+		
 		display: flex;
 		justify-content: flex-end;
 		& .fot-btn {
@@ -655,7 +652,7 @@
 	display: none;
 	width: 865px;
 	padding: 30px;
-	box-sizing: border-box;
+	
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
 	@media screen and (max-width: 768px) {
 		width: 100vw;
@@ -747,12 +744,12 @@
 	position: absolute;
 	display: none;
 	padding-top: 14px;
-	box-sizing: border-box;
+	
 	&-box {
 		background-color: $white;
 		box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
 		padding: 15px;
-		box-sizing: border-box;
+		
 		&__item {
 			margin-bottom: 10px;
 			& a {
@@ -825,7 +822,7 @@
 }
 .dorp_lang {
 	padding-top: 15px;
-	box-sizing: border-box;
+	
 	display: none;
 	position: absolute;
 	left: -20px;
@@ -845,7 +842,7 @@
 		background-color: $white;
 		box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
 		padding: 30px 30px 30px 20px;
-		box-sizing: border-box;
+		
 		&__item {
 			& a {
 				& .icon-yes::before {

@@ -38,7 +38,6 @@
 .box-origin {
 	display: block;
 	padding: 20px;
-	box-sizing: border-box;
 	width: 260px;
 	@media screen and (max-width: 1024px) {
 		width: 210px;
@@ -54,7 +53,6 @@
 	
 	&-border {
 		border: 1px solid $greey;
-		box-sizing: border-box;
 		width: 220px;
 		height: 320px;
 		display: flex;
@@ -74,7 +72,6 @@
 	&-grey {
 		background: $greey;
 		padding: 0 20px;
-		box-sizing: border-box;
 		height: 90px;
 		width: 260px;
 		min-width: 260px;

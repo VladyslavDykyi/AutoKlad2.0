@@ -18,6 +18,11 @@ $R-b: "Roboto-Bold";
 $R-m: "Roboto-Medium";
 $R-r: "Roboto-Regular";
 /*---цвета ---*/
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
 input,
 a,
 button {
@@ -107,7 +112,6 @@ button:disabled {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 20px;
-	box-sizing: border-box;
 	@media screen and (max-width: 1024px) {
 		max-width: 768px;
 		padding: 0 15px;
@@ -123,7 +127,6 @@ button:disabled {
 .bg-site {
 	background-color: $white;
 	padding: 150px 0 0;
-	box-sizing: border-box;
 	@media screen and (max-width: 1024px) {
 		padding: 120px 0 0;
 	}
@@ -135,7 +138,6 @@ button:disabled {
 	background: transparent;
 	border: none;
 	cursor: pointer;
-	box-sizing: border-box;
 	
 	&:hover {
 		& .icon-geo::before {
@@ -187,7 +189,7 @@ button:disabled {
 			background-color: $white;
 			
 			&:hover {
-				background-color: #00acde;
+				background-color: $lite-blue;
 			}
 			
 			&:hover i::before {
@@ -225,7 +227,6 @@ button:disabled {
 	width: 100%;
 	padding: 10px;
 	border: 1px solid $greey;
-	box-sizing: border-box;
 	border-top: 1px solid transparent;
 	
 	&-list {
@@ -244,6 +245,10 @@ button:disabled {
 				}
 				& .lis-item-box:last-child {
 					margin-left: 5px;
+					& div {
+						display: flex;
+						grid-gap: 5px;
+					}
 				}
 			}
 		}
@@ -261,7 +266,6 @@ button:disabled {
 		width: 55%;
 	}
 	@media screen and (max-width: 650px) {
-		width: 50%;
 		flex-direction: column;
 		width: auto;
 	}
@@ -280,5 +284,16 @@ button:disabled {
 		}
 	}
 }
-
+.fancybox-caption__body2 {
+	margin-top: 10px;
+	color: #fff;
+	font-size: 20px;
+	line-height: 36px;
+	font-family: 'Roboto-Medium';
+	font-weight: 500;
+	@media screen and (max-width: 768px) {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
 

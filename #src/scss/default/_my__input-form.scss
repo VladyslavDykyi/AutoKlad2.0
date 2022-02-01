@@ -1,9 +1,8 @@
 .inputForm {
 	border: 1px solid $greey;
 	padding: 10px 15px;
-	border-radius: 0px;
+	border-radius: 0;
 	-webkit-appearance: none;
-	box-sizing: border-box;
 	background-color: $white;
 	outline: none;
 	width: 100%;
@@ -53,7 +52,7 @@
 	width: 100%;
 	padding: 10px 15px;
 	margin: 15px 0px;
-	box-sizing: border-box;
+	
 	font-family: $R-r;
 	font-weight: 400;
 	font-size: 14px;

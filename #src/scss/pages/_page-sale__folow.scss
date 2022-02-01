@@ -14,14 +14,13 @@
 		align-items: flex-end;
 		height: 400px;
 		width: 50%;
-		padding: 100px 110px 120px 0px;
-		box-sizing: border-box;
+		padding: 100px 110px 120px 0;
 		background-image: url("../img/bg-sale.png");
 		background-repeat: no-repeat;
 		background-size: cover;
 		position: relative;
 		@media screen and (max-width: 1024px) {
-			padding: 100px 30px 120px 0px;
+			padding: 100px 30px 120px 0;
 		}
 		@media screen and (max-width: 520px) {
 			width: 100%;
@@ -66,8 +65,7 @@
 	&-right {
 		background-color: $blue;
 		height: 400px;
-		padding: 100px 0px 120px 110px;
-		box-sizing: border-box;
+		padding: 100px 0 120px 110px;
 		width: 50%;
 		@media screen and (max-width: 1024px) {
 			padding: 100px 30px 120px 30px;

@@ -1,13 +1,11 @@
 .titles-tab {
 	border-top: 1px solid $lite-greey;
 	padding: 5px 10px 0;
-	box-sizing: border-box;
 	margin: 0 -10px 25px;
 	& .title-tab {
 		border-top: 2px solid transparent;
 		cursor: pointer;
 		margin-right: 30px;
-		box-sizing: border-box;
 		padding-top: 5px;
 		font-family: $R-r;
 		font-weight: 400;
@@ -33,7 +31,6 @@
 		border-bottom: 1px solid $small-greey;
 		margin: 0 5px;
 		padding-bottom: 10px;
-		box-sizing: border-box;
 	}
 	@media screen and (max-width: 768px) {
 		margin: 0 -10px;
@@ -45,7 +42,6 @@
 	& .box-params {
 		&__item {
 			padding: 5px 20px;
-			box-sizing: border-box;
 			display: flex;
 			align-items: center;
 			& .item__name {
@@ -93,7 +89,6 @@
 					display: flex;
 					align-items: center;
 					padding: 6px 4px;
-					box-sizing: border-box;
 					&:hover {
 						background: $lite-greey;
 						border-radius: 2px;
@@ -190,7 +185,6 @@
 				position: relative;
 				margin-left: 25px;
 				padding: 0;
-				box-sizing: border-box;
 				border: none;
 				outline: none;
 				background: $white;
@@ -357,7 +351,6 @@
 		display: block;
 		& .table-head {
 			padding: 0 10px;
-			box-sizing: border-box;
 			background-color: $lite-greey;
 			display: block;
 			@media screen and (max-width: 425px) {
@@ -367,7 +360,6 @@
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
-				box-sizing: border-box;
 				padding: 15px 0;
 				& th {
 					width: 20%;
@@ -392,7 +384,7 @@
 		}
 		& .table-body {
 			padding: 0 10px;
-			box-sizing: border-box;
+			
 			display: block;
 			@media screen and (max-width: 425px) {
 				margin: 0 -10px;
@@ -401,7 +393,7 @@
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
-				box-sizing: border-box;
+				
 				padding: 10px 0;
 				& td {
 					flex: 0 1 20%;
@@ -450,7 +442,7 @@
 		margin-top: 15px;
 		border-top: 1px solid $lite-greey;
 		padding-top: 10px;
-		box-sizing: border-box;
+		
 		display: flex;
 		align-items: center;
 		justify-content: space-between;

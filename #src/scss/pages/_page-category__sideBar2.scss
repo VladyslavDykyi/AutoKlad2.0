@@ -2,9 +2,8 @@
 	margin-top: 20px;
 	background: #ffffff;
 	border: 1px solid #f6f6f6;
-	box-sizing: border-box;
 	@media screen and (max-width: 768px) {
-		margin-top: 0px;
+		margin-top: 0;
 	}
 	&.active {
 		& .mobDrop-car {
@@ -16,7 +15,6 @@
 	& .mobDrop-car {
 		padding: 10px;
 		border-radius: 2px;
-		box-sizing: border-box;
 		background-color: $blue;
 		margin-bottom: 10px;
 		display: none;
@@ -33,14 +31,12 @@
 	}
 	&__title {
 		padding: 15px 20px 0 20px;
-		box-sizing: border-box;
 		color: $black2;
 	}
 	& picture {
 	}
 	&__params {
 		padding: 5px 10px 10px 20px;
-		box-sizing: border-box;
 		&-item {
 			display: flex;
 			margin-bottom: 13px;

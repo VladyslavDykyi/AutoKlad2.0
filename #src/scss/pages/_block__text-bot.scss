@@ -1,8 +1,7 @@
 .bot-cont {
 	margin-top: 110px;
 	background: $lite-greey;
-	padding: 15px 0px 75px;
-	box-sizing: border-box;
+	padding: 15px 0 75px;
 	@media screen and (max-width: 1024px) {
 		margin-top: 90px;
 	}
@@ -44,7 +43,6 @@
 		justify-content: flex-end;
 		& .full-btn {
 			cursor: pointer;
-			box-sizing: border-box;
 			outline: none;
 			padding: 0px;
 			border: none;

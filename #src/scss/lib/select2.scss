@@ -1,11 +1,9 @@
 .select2-container {
-  box-sizing: border-box;
   display: inline-block;
   margin: 0;
   position: relative;
   vertical-align: middle; }
   .select2-container .select2-selection--single {
-    box-sizing: border-box;
     cursor: pointer;
     display: block;
     height: 28px;
@@ -26,7 +24,6 @@
     padding-right: 8px;
     padding-left: 20px; }
   .select2-container .select2-selection--multiple {
-    box-sizing: border-box;
     cursor: pointer;
     display: block;
     min-height: 32px;
@@ -41,7 +38,6 @@
       border: none;
       font-size: 1em; }
   .select2-container .select2-search--inline .select2-search__field {
-    box-sizing: border-box;
     border: none;
     font-size: 100%;
     margin-top: 5px;
@@ -61,7 +57,6 @@
   background-color: white;
   border: 1px solid #aaa;
   border-radius: 4px;
-  box-sizing: border-box;
   display: block;
   position: absolute;
   left: -100000px;
@@ -103,7 +98,7 @@
   .select2-search--dropdown .select2-search__field {
     padding: 4px;
     width: 100%;
-    box-sizing: border-box; }
+     }
     .select2-search--dropdown .select2-search__field::-webkit-search-cancel-button {
       -webkit-appearance: none; }
   .select2-search--dropdown.select2-search--hide {
@@ -212,7 +207,6 @@
     background-color: #e4e4e4;
     border: 1px solid #aaa;
     border-radius: 4px;
-    box-sizing: border-box;
     display: inline-block;
     margin-left: 5px;
     margin-top: 5px;

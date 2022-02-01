@@ -9,14 +9,14 @@
 			}
 			&-coll {
 				background-color: $lite-greey;
-				box-sizing: border-box;
+				
 				& th:nth-of-type(2) {
 					padding-left: 20px;
-					box-sizing: border-box;
+					
 				}
 				& th {
 					padding: 15px 0px;
-					box-sizing: border-box;
+					
 					text-align: left;
 					@media screen and (max-width: 425px) {
 						padding: 10px 0px;
@@ -58,7 +58,7 @@
 					vertical-align: middle;
 					@media screen and (max-width: 580px) {
 						padding: 5px 0px;
-						box-sizing: border-box;
+						
 						text-align: center;
 					}
 					& img {
@@ -69,7 +69,7 @@
 					}
 					& .name {
 						padding-left: 20px;
-						box-sizing: border-box;
+						
 						display: flex;
 						flex-direction: column;
 						align-items: flex-start;

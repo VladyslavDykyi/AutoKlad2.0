@@ -34,7 +34,6 @@
 	background: $white;
 	position: relative;
 	width: 570px;
-	box-sizing: border-box;
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 	@media screen and (max-width: 768px) {
 		width: 500px;
@@ -73,7 +72,6 @@
 .popUp {
 	&-form-reviews {
 		padding-bottom: 20px;
-		box-sizing: border-box;
 		& .write-text {
 			display: flex;
 			flex-direction: column;
@@ -155,12 +153,10 @@
 						background-color: $white;
 						border: 1px solid $greey;
 						width: 100%;
-						box-sizing: border-box;
 						z-index: 10;
 					}
 					& .title-tab {
 						padding: 8.5px 20px;
-						box-sizing: border-box;
 						border-top: 2px solid transparent;
 						transition: all 0.2s linear;
 						cursor: pointer;
@@ -246,7 +242,6 @@
 								}
 								&-head {
 									padding: 15px;
-									box-sizing: border-box;
 									@media screen and (max-width: 768px) {
 										padding: 5px;
 									}
@@ -254,7 +249,6 @@
 								&-body {
 									width: 100%;
 									padding: 15px;
-									box-sizing: border-box;
 									@media screen and (max-width: 768px) {
 										padding: 5px;
 									}
@@ -355,7 +349,6 @@
 	&-form__cb {
 		margin: 0 30px;
 		padding-bottom: 20px;
-		box-sizing: border-box;
 		@media screen and (max-width: 580px) {
 			margin: 0 20px;
 		}
@@ -409,7 +402,6 @@
 					width: 100%;
 					height: 40px;
 					padding: 10px 15px;
-					box-sizing: border-box;
 					font-family: $R-r;
 					font-weight: 400;
 					font-size: 14px;
@@ -433,7 +425,6 @@
 					width: 100%;
 					height: 40px;
 					padding: 10px 15px;
-					box-sizing: border-box;
 					font-family: $R-r;
 					font-weight: 400;
 					font-size: 14px;
@@ -450,7 +441,6 @@
 	&-form__masage {
 		margin: 15px 30px 0;
 		padding-bottom: 20px;
-		box-sizing: border-box;
 		display: flex;
 		flex-direction: column;
 		@media screen and (max-width: 580px) {
@@ -470,7 +460,6 @@
 			background: $white;
 			border: 1px solid $greey;
 			border-radius: 8px;
-			box-sizing: border-box;
 			width: 100%;
 			padding: 10px 15px;
 			outline: none;
@@ -522,7 +511,6 @@
 		margin: 15px 30px 0;
 		border-top: 1px solid $blue;
 		padding: 20px 0;
-		box-sizing: border-box;
 		@media screen and (max-width: 580px) {
 			margin: 15px 20px 0;
 		}
@@ -563,7 +551,6 @@
 		&__rec {
 			border-top: 1px solid $blue;
 			padding: 25px 0 60px;
-			box-sizing: border-box;
 			&-box {
 				margin-top: 10px;
 				display: flex;
@@ -579,10 +566,8 @@
 				& .tovar-coll__item {
 					width: 200px;
 					border: 1px solid $lite-greey;
-					box-sizing: border-box;
 					background-color: $white;
 					padding: 10px;
-					box-sizing: border-box;
 					transition: all 0.2s linear;
 					&:hover {
 						box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
@@ -593,7 +578,6 @@
 	}
 	&-heder2 {
 		padding: 15px 30px;
-		box-sizing: border-box;
 		background: $blue;
 		@media screen and (max-width: 580px) {
 			padding: 15px 20px;
@@ -701,7 +685,7 @@
 			flex-wrap: wrap;
 			padding-bottom: 30px;
 			border-bottom: 1px solid $blue;
-			box-sizing: border-box;
+			
 			@media screen and (max-width: 580px) {
 				padding-bottom: 15px;
 				margin: 0 15px;
@@ -732,7 +716,7 @@
 		&__text {
 			margin: 0 30px;
 			padding-bottom: 60px;
-			box-sizing: border-box;
+			
 			@media screen and (max-width: 580px) {
 				margin: 0 15px;
 				padding-bottom: 30px;
@@ -756,7 +740,7 @@
 			flex-wrap: wrap;
 			padding: 0 0 40px;
 			margin: 0 50px;
-			box-sizing: border-box;
+			
 			&-item {
 				margin-right: 15px;
 			}
@@ -767,7 +751,7 @@
 	}
 	&-heder {
 		padding: 15px 50px;
-		box-sizing: border-box;
+		
 		background: $blue;
 		@media screen and (max-width: 580px) {
 			padding: 15px 20px;
@@ -782,7 +766,7 @@
 		padding: 45px 0 20px;
 		margin: 0 50px;
 		border-bottom: 1px solid $blue;
-		box-sizing: border-box;
+		
 		@media screen and (max-width: 580px) {
 			padding: 15px 0 15px;
 			margin: 0 20px;
@@ -806,7 +790,7 @@
 		justify-content: space-between;
 		margin-top: 25px;
 		padding: 0 50px 25px;
-		box-sizing: border-box;
+		
 		@media screen and (max-width: 580px) {
 			padding: 0 20px 15px;
 			margin-top: 15px;
@@ -826,7 +810,7 @@
 	}
 	&-form {
 		padding: 45px 50px 0;
-		box-sizing: border-box;
+		
 		@media screen and (max-width: 580px) {
 			padding: 15px 20px 0;
 		}
@@ -901,7 +885,7 @@
 				color: $greey;
 				padding: 0 5px;
 				border: 1px solid $greey;
-				box-sizing: border-box;
+				
 				margin-right: 15px;
 				@media screen and (max-width: 580px) {
 					margin-right: 0;
@@ -976,7 +960,7 @@
 				& .title {
 					background: $white;
 					border: 1px solid $greey;
-					box-sizing: border-box;
+					
 					padding: 10px;
 					width: max-content;
 					height: 100%;
@@ -1099,7 +1083,7 @@
 	&-danger {
 		padding: 0 0 40px;
 		margin: 0 50px;
-		box-sizing: border-box;
+		
 		display: flex;
 		align-items: center;
 		border-bottom: 1px solid $blue;
@@ -1120,7 +1104,7 @@
 	&-history {
 		margin-top: 25px;
 		padding: 0 50px 25px;
-		box-sizing: border-box;
+		
 		@media screen and (max-width: 580px) {
 			margin-top: 15px;
 			padding: 0 20px 15px;
@@ -1220,10 +1204,10 @@
 				}
 				&-coll {
 					background-color: $lite-greey;
-					box-sizing: border-box;
+					
 					& th {
 						padding: 15px 0;
-						box-sizing: border-box;
+						
 						text-align: left;
 						@media screen and (max-width: 425px) {
 							padding: 10px 0;
@@ -1263,7 +1247,7 @@
 						vertical-align: middle;
 						@media screen and (max-width: 580px) {
 							padding: 5px 0;
-							box-sizing: border-box;
+							
 							text-align: center;
 						}
 						& img {
@@ -1334,7 +1318,7 @@
 			border-top: 1px solid $lite-greey;
 			padding-top: 20px;
 			margin-top: 10px;
-			box-sizing: border-box;
+			
 			display: flex;
 			align-items: center;
 			justify-content: flex-end;
@@ -1400,7 +1384,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		box-sizing: border-box;
+		
 		width: 20px;
 		height: 25px;
 		cursor: pointer;
@@ -1417,7 +1401,7 @@
 		border-top: 1px solid $greey;
 		border-bottom: 1px solid $greey;
 		text-align: center;
-		box-sizing: border-box;
+		
 		@media screen and (max-width: 580px) {
 			width: 55px;
 			height: 30px;
