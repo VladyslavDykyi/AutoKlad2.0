@@ -27,6 +27,14 @@
 		@media screen and (max-width: 580px) {
 			grid-gap: 0px;
 		}
+		&.popCat {
+			grid-template-areas:
+			"header1 header1"
+			"sideBar carts"
+			"sideBar carts"
+			"sideBar carts"
+			"sideBar carts"; // conent4 фиксит баг
+		}
 		&-head {
 			grid-area: header1;
 		}
