@@ -20,7 +20,7 @@
 		display: none;
 		@media screen and (max-width: 768px) {
 			display: block;
-			margin-bottom: 0px;
+			margin-bottom: 0;
 		}
 		&.pointer::after {
 			border-color: $white;
@@ -58,7 +58,7 @@
 			}
 		}
 		& .category-page__container-sideBar2__params-item:last-child {
-			margin-bottom: 0px;
+			margin-bottom: 0;
 		}
 	}
 }

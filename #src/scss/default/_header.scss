@@ -869,3 +869,32 @@
 .drop__call-box__item a .icon-call::before {
 	margin-right: 10px;
 }
+.lc-sideBar-list {
+	margin: 30px 0;
+	& .list-item {
+		padding: 5px 10px;
+		&.active {
+			background-color: $blue;
+			& a:hover {
+				& .text-r {
+					color: $white;
+				}
+			}
+			& i:before {
+				color: $white;
+			}
+			& .text-r {
+				color: $white;
+			}
+		}
+		& a:hover {
+			& .text-r {
+				color: $blue;
+			}
+		}
+		& .text-r {
+			transition: all 0.2s linear;
+			margin-left: 10px;
+		}
+	}
+}

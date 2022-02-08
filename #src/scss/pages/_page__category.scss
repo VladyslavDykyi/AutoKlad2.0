@@ -6,7 +6,7 @@
 			"sideBar carts"
 			"sideBar2 carts"
 			"conent4 carts"
-			"conent4 carts"; // conent4 фиксит баг
+			"sideBar3 carts"; // conent4 фиксит баг
 		grid-template-columns: 23.0276% calc(76.9724% - 30px);
 		grid-gap: 20px 30px;
 		@media screen and (max-width: 1280px) {
@@ -21,20 +21,21 @@
 				"header1"
 				"sideBar2"
 				"sideBar"
-				"carts";
+				"carts"
+				"sideBar3";
 			grid-template-columns: 100%;
 		}
 		@media screen and (max-width: 580px) {
-			grid-gap: 0px;
+			grid-gap: 0;
 		}
-		&.popCat {
-			grid-template-areas:
-			"header1 header1"
-			"sideBar carts"
-			"sideBar carts"
-			"sideBar carts"
-			"sideBar carts"; // conent4 фиксит баг
-		}
+		//&.popCat {
+		//	grid-template-areas:
+		//	"header1 header1"
+		//	"sideBar carts"
+		//	"sideBar carts"
+		//	"sideBar carts"
+		//	"sideBar carts"; // conent4 фиксит баг
+		//}
 		&-head {
 			grid-area: header1;
 		}
@@ -43,6 +44,9 @@
 		}
 		&-sideBar2 {
 			grid-area: sideBar2;
+		}
+		& .sidebar-foot {
+			grid-area: sideBar3;
 		}
 		&-carts {
 			grid-area: carts;

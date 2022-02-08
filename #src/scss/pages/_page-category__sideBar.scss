@@ -193,16 +193,16 @@
 	& .sidebar-content:last-child {
 		margin-top: 40px;
 	}
-	& .sidebar-foot {
-		margin-top: 40px;
-		&__title {
-			margin-bottom: 15px;
-		}
-		&__container {
-			&-item {
-				margin-bottom: 5px;
-				& .link {
-				}
+}
+.sidebar-foot {
+	margin-top: 40px;
+	&__title {
+		margin-bottom: 15px;
+	}
+	&__container {
+		&-item {
+			margin-bottom: 5px;
+			& .link {
 			}
 		}
 	}
