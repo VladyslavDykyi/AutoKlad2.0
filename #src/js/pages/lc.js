@@ -55,3 +55,12 @@ if ($(window).width() <= 768) {
 		}
 	});
 }
+function visionPas(elem) {
+
+	if ($(elem).siblings().children('.i-n').attr('type') === 'password'){
+		$(elem).siblings().children('.i-n').attr('type','text');
+	} else {
+		$(elem).siblings().children('.i-n').attr('type', 'password');
+	}
+	return false;
+}

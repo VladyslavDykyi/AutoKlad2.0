@@ -3,85 +3,99 @@
 </div>
 <div class="lc-content-wrapper">
 	<div class="lc-content-l">
-		<div>
-			<p>
-				Логин: <span>067 659 63 29</span>
-			</p>
-			<p>
-				Логин: <span>067 659 63 29</span>
-			</p>
-			<p>
+		<form class="lc-content-form" action="#">
+			<label class="text-r text-r-f14-l20 text-m-black">
+				Логин: <input class="i-n" type="tel" value="0676596329">
+			</label>
+			<div class="rename">
+				<label class="text-r text-r-f14-l20 text-m-black">
+					Пароль:  <input class="i-n" type="password" value="121212">
+				</label>
+				<button class="btn" type="button" onclick="visionPas(this);">
+					<i class="icon-pan"></i>
+				</button>
+			</div>
+			
+			<p class="text-m text-m-f14-l20 text-m-black">
 				Бонусы, активно/всего: 10/10
 			</p>
-		</div>
-		<form class="" action="#">
 			<label>
-				<input class="inputForm inputForm-xl"  type="password" required placeholder="">
+				<input class="inputForm "  type="text" required placeholder="Имя*">
 			</label>
 			<label>
-				<input class="inputForm inputForm-xl"  type="password" required placeholder="">
+				<input class="inputForm "  type="text"  placeholder="Псевдоним в комментариях">
 			</label>
 			<label>
-				<input class="inputForm inputForm-xl"  type="password" required placeholder="">
+				<input class="inputForm "  type="tel" required placeholder="Телефон*">
 			</label>
 			<label>
-				<input class="inputForm inputForm-xl"  type="password" required placeholder="">
+				<input class="inputForm "  type="email" required placeholder="Email*">
 			</label>
 			<label>
-				<input class="inputForm inputForm-xl"  type="password" required placeholder="">
+				<input class="inputForm "  type="text"  placeholder="Дата рождения">
 			</label>
 			<label>
-				<select class="js-example-basic-single">
+				<select class="js-example-basic-single w100p" required>
 					<option value="0" select>Страна</option>
 				</select>
 			</label>
 			<label>
-				<select class="js-example-basic-single">
+				<select class="js-example-basic-single w100p" required>
 					<option value="0" select>Область</option>
 				</select>
 			</label>
 			<label>
-				<select class="js-example-basic-single">
+				<select class="js-example-basic-single w100p" required>
 					<option value="0" select>Город</option>
 				</select>
 			</label>
+			<label class="check option">
+				<input class="check__input" type="checkbox" checked="">
+				<span class="check__box"></span>
+				<span class="text-r text-r-f14-l20 text-r-blue">Хочу получать промо-коды и узнавать о спецпредложениях</span>
+			</label>
+			<button class="btn" type="submit">Сохранить</button>
 		</form>
 	</div>
 	<div class="lc-content-r">
-		<img src="./img/banner12.png" alt="">
-		<div>
+		<img src="./img/test.png" alt="">
+		<div class="lc-content-text">
 			<p>Бонусная программа от Автоклад — это возможность накапливать личные бонусы при каждой покупке!
 				Совершая покупки в Автоклад, зарегистрированные участники БП накапливают бонусы на следующие покупки.
 			</p><br>
 			<p>
 				Для участников БП начисляются бонусы в размере 1% от суммы выполненных заказов. Накопленные баллы могут быть потрачены в счёт оплаты последующих заказов, но не более 10% от их стоимости
 			</p><br>
-			<p>
-				ЦЕНА БОНУСА: 1 БОНУС = 1 ГРИВНА</p><br>
+			<h2>
+				ЦЕНА БОНУСА: 1 БОНУС = 1 ГРИВНА</h2><br>
 			<p>
 				
-				Бонусы начисляются в момент выполнения заказа, но становятся активными через 15 дней, что связано с Вашим законным правом вернуть товар в срок до 14 дней
+				Бонусы начисляются в  момент выполнения заказа, но становятся активными через 15 дней, что связано с Вашим законным правом вернуть товар в срок до 14 дней
 				Срок действия начисленных по заказу бонусов истекает через 6 месяцев.
 				Компания Автоклад оставляет за собой право отказать клиенту в праве участия в бонусной программе без объяснения причин
 				Денежный эквивалент бонусов на руки не выдаётся и не перечисляется каким-либо платёжными средствами</p>
 		</div>
-		
+		<div class="lc-content-link">
+			<a class="btn" href="#">Участвую!</a>
+		</div>
 	</div>
 </div>
 <div>
-	<h2>
+	<h2 class="text-b">
 		Статистика
 	</h2>
-	<p>
-		Клиент с: 2017-12-29 22:01:54
-	</p>
-	<p>
-		Выбранный язык: RU
-	</p>
-	<p>
-		Запросов к ВИН каталогу: 100
-	</p>
-	<p>
-		Выполнено запросов: 0
-	</p>
+	<ul class="list-stat">
+		<li class="text-r text-r-f14-l20 text-r-greey">
+			Клиент с: <span class="text-r-black">2017-12-29 22:01:54</span>
+		</li>
+		<li class="text-r text-r-f14-l20 text-r-greey">
+			Выбранный язык: <span class="text-r-black"> RU</span>
+		</li>
+		<li class="text-r text-r-f14-l20 text-r-greey">
+			Запросов к ВИН каталогу: <span class="text-r-black">100</span>
+		</li>
+		<li class="text-r text-r-f14-l20 text-r-greey">
+			Выполнено запросов: <span class="text-r-black">0</span>
+		</li>
+	</ul>
 </div>
