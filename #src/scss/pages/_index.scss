@@ -68,7 +68,7 @@
 			}
 			& .sliders {
 				display: flex;
-				justify-content: space-between;
+				flex-direction: column-reverse;
 				position: relative;
 				& .rec {
 					position: absolute;
@@ -93,7 +93,7 @@
 			}
 			@media screen and (max-width: 768px) {
 				background: $white;
-				padding-top: 0px;
+				padding-top: 0;
 			}
 			@media screen and (max-width: 425px) {
 				padding: 0;
@@ -101,9 +101,9 @@
 		}
 		&-3 {
 			grid-area: conent3;
-			margin: 20px 20px 0px 0px;
+			margin: 20px 20px 0 0;
 			@media screen and (max-width: 768px) {
-				margin: 0px;
+				margin: 0;
 			}
 		}
 	}

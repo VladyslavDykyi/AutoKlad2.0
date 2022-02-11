@@ -4,6 +4,13 @@
 	@media screen and (max-width: 580px) {
 		margin-bottom: 15px;
 	}
+	& > div {
+		width: 20px;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 	&-box {
 		display: flex;
 		align-items: center;
@@ -47,14 +54,10 @@
 		background-color: $white;
 	}
 	& .arrow-l {
-		margin-left: 10px;
-		margin-right: 30px;
 		transform: rotate(-45deg);
 		@media screen and (max-width: 580px) {
-			margin-right: 10px;
 		}
 		@media screen and (max-width: 425px) {
-			margin-right: 22px;
 		}
 		&:hover {
 			transform: scale(1.1) rotate(-45deg);

@@ -12,20 +12,12 @@ $(document).ready(function () {
 		asNavFor: '.tovar-nav',
 	});
 	$('.tovar-nav').slick({
-		slidesToShow: 3,
+		slidesToShow: 4,
 		slidesToScroll: 1,
-		vertical: true,
+		vertical: false,
 		asNavFor: '.tovar-for',
 		focusOnSelect: true,
 		arrows: false,
-		responsive: [
-			{
-				breakpoint: 769,
-				settings: {
-					vertical: false,
-				}
-			}
-		]
 	});
 	$('.slider__popUp').slick({
 		infinite: true,
@@ -51,7 +43,7 @@ $(document).ready(function () {
 	$('.full-btn').click(function () {
 		$('.bot-cont__text').toggleClass('active');
 		$('.full-btn').css('display', 'none');
-	})
+	});
 	// скрыть/раскрыть текст
 	//скрыть раскрыть текст в ответе
 

@@ -1,18 +1,17 @@
 .tovar-nav__wrap-img {
-	max-width: 73px;
+	max-width: 72px;
 	background: #fff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
 	@media screen and (max-width: 768px) {
-		max-width: 73px;
+		max-width: 72px;
 	}
 }
 .tovar-nav__item {
-	height: 70px;
-	width: 70px;
-	margin-bottom: 10px;
+	height: 72px;
+	width: 72px;
 	@media screen and (max-width: 768px) {
 		min-width: 72px !important;
 		width: 72px !important;
@@ -20,7 +19,7 @@
 }
 .tovar-nav {
 	& div.slick-list div.slick-track div.slick-slide.slick-cloned {
-		margin-bottom: 10px;
+		//margin-bottom: 10px;
 	}
 }
 .tovar-nav {
@@ -38,9 +37,12 @@
 	object-fit: contain;
 }
 .tovar-nav {
-	max-width: 80px;
-	width: 100%;
+	//max-width: 80px;
+	height: 72px;
 	overflow: hidden;
+	& div {
+		height: 72px;
+	}
 	@media screen and (max-width: 768px) {
 		max-width: inherit;
 		width: 100%;
@@ -64,6 +66,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	& img {
+		height: 360px;
+		width: 350px;
+		object-fit: contain;
+	}
 }
 .sliders {
 	overflow: hidden;
