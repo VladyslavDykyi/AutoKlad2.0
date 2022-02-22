@@ -86,7 +86,7 @@
 					border: 2px solid $blue;
 					&:hover {
 						background-color: $lite-blue;
-						border: 2px solid $lite-blue;
+						border-color: $lite-blue;
 					}
 				}
 				& button:first-child {

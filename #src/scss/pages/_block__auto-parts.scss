@@ -100,7 +100,7 @@
 						border-bottom: 1px dotted transparent;
 						&:hover {
 							color: $lite-blue;
-							border-bottom: 1px dotted $lite-blue;
+							border-bottom-color: $lite-blue;
 						}
 					}
 				}

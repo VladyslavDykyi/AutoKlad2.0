@@ -17,10 +17,10 @@
 			margin-right: 5px;
 		}
 		&:hover {
-			border-top: 2px solid $blue;
+			border-color: $blue;
 		}
 		&.active {
-			border-top: 2px solid $blue;
+			border-color: $blue;
 			cursor: auto;
 		}
 	}

@@ -172,13 +172,13 @@
 							width: 100%;
 						}
 						&.active {
-							border-top: 2px solid $blue;
+							border-color: $blue;
 							font-family: $R-m;
 							font-weight: 500;
 							color: $dark-green;
 						}
 						&:hover {
-							border-top: 2px solid $blue;
+							border-color: $blue;
 							font-family: $R-m;
 							font-weight: 500;
 							color: $dark-green;

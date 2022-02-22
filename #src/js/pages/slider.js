@@ -9,16 +9,16 @@ $(document).ready(function () {
 		dots: false,
 		dotsClass: "my-dots-bot",
 		fade: false,
-		asNavFor: '.tovar-nav',
+	//	asNavFor: '.tovar-nav',
 	});
-	$('.tovar-nav').slick({
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		vertical: false,
-		asNavFor: '.tovar-for',
-		focusOnSelect: true,
-		arrows: false,
-	});
+	// $('.tovar-nav').slick({
+	// 	slidesToShow: 4,
+	// 	slidesToScroll: 1,
+	// 	vertical: false,
+	// 	asNavFor: '.tovar-for',
+	// 	focusOnSelect: true,
+	// 	arrows: false,
+	// });
 	$('.slider__popUp').slick({
 		infinite: true,
 		slidesToShow: 1,

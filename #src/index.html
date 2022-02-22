@@ -1,169 +1,16 @@
 @@include('_header1.html')
 <main class="bg-site cart-product">
 	<div class="container">
-		<ul class="bread-dots">
-			<li class="bread-dots__item">
-				<a class="bread-link" href=""><i class="icon-hous"></i></a>
-			</li>
-			<li class="bread-dots__item icon-arrowR">
-				<a class="bread-link" href="">Фильтр масляный</a>
-			</li>
-			<li class="bread-dots__item icon-arrowR">
-				<a class="bread-link" href="">
-					<span class="text">Другие товары</span>
-					<span class="name">Denckermann</span>
-				</a>
-			</li>
-			<li class="bread-dots__item icon-arrowR active">
-				<a class="bread-link" href="">Denckermann A210039</a>
-			</li>
-		</ul>
+		@@include('_bread.html')
 		<div class="cart-product__box">
-			<div class="cart-product__title-box">
-				<h1 class="title-T">Фильтр масляный DENCKERMANN A210039</h1>
-				<span class="vendor-code text-r text-r-f14-l20 text-r-greey">Артикул: <span>A210039</span></span>
-				<div class="box-r">
-					<div class="rating-box">
-						<span class="rating rating-active"></span>
-						<span class="rating rating-active"></span>
-						<span class="rating rating-active"></span>
-						<span class="rating rating-active"></span>
-						<span class="rating"></span>
-						<span class="text-r text-r-f16-l25">3.6</span>
-					</div>
-					<span class="text-r text-r-f16-l25 text-r-blue">
-						Оценок 5
-					</span>
-				</div>
-			</div>
+			@@include('_top-title.html')
 			<div class="cart-product__box-1">
 				<div class="sliders">
 					<span class="marking"><i class="icon-yes"></i> Рекомендуем</span>
-					<div class="tovar-nav">
-						<div class="tovar-nav__item">
-							<div class="tovar-nav__wrap-img">
-								<img src="./img/test.png" alt="">
-							</div>
-						</div>
-						<div class="tovar-nav__item">
-							<div class="tovar-nav__wrap-img">
-								<img src="./img/test.png" alt="">
-							</div>
-						</div>
-						<div class="tovar-nav__item">
-							<div class="tovar-nav__wrap-img">
-								<img src="./img/oilPhilter1-min.png" alt="">
-							</div>
-						</div>
-						<div class="tovar-nav__item">
-							<div class="tovar-nav__wrap-img">
-								<img src="./img/oilPhilter2-min.png" alt="">
-							</div>
-						</div>
-						<div class="tovar-nav__item">
-							<div class="tovar-nav__wrap-img">
-								<img src="./img/oilPhilter3-min.png" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="tovar-for">
-						<a class="tovar-for__item" href="./img/oilPhilter1-min.png" data-fancybox="gallery"
-							data-caption="Описание фотографии">
-							<figure class="tovar-for__wrap-img">
-								<img src="./img/test.png" alt="">
-								<figcaption>имя картинки</figcaption>
-							</figure>
-						</a>
-						<a class="tovar-for__item" href="./img/oilPhilter1-min.png" data-fancybox="gallery"
-						   data-caption="Описание фотографии">
-							<figure class="tovar-for__wrap-img">
-								<img src="./img/test.png" alt="">
-								<figcaption>имя картинки</figcaption>
-							</figure>
-						</a>
-						<a class="tovar-for__item" href="./img/oilPhilter1-min.png" data-fancybox="gallery"
-						   data-caption="Описание фотографии">
-							<figure class="tovar-for__wrap-img">
-								<img src="./img/oilPhilter1-min.png" alt="">
-								<figcaption>имя картинки</figcaption>
-							</figure>
-						</a>
-						<a class="tovar-for__item" href="./img/oilPhilter2-min.jpg" data-fancybox="gallery"
-							data-caption="Описание фотографии">
-							<figure class="tovar-for__wrap-img">
-								<img src="./img/oilPhilter2-min.jpg" alt="">
-								<figcaption>имя картинки</figcaption>
-							</figure>
-						</a>
-						<a class="tovar-for__item" href="./img/oilPhilter3-min.jpg" data-fancybox="gallery"
-							data-caption="Описание фотографии">
-							<figure class="tovar-for__wrap-img">
-								<img src="./img/oilPhilter3-min.jpg" alt="">
-								<figcaption>имя картинки</figcaption>
-							</figure>
-						</a>
-					</div>
+					@@include('_slider-small.html')
+					@@include('_slider-big.html')
 				</div>
-				<ul class="box__price">
-					<li class="box__price-buy">
-						<span class="title-T">72
-							<span class="text-r text-r-f16-l25">
-								грн.
-							</span>
-						</span>
-						<button class="btn" type="button" onclick="$('#exampleModal9').arcticmodal();">Купить</button>
-					</li>
-					<li class="box__price-geo">
-						<span class="text-r text-r-f14-l20">Отгрузим со склада в</span>
-						<button class="sity text-r text-r-f14-l20 text-r-blue"
-							onclick="$('#exampleModal6').arcticmodal();">
-							<i class="icon-geo"></i>
-							<span class="sity__text">Киеве</span>
-						</button>
-						<span class="text-r text-r-f14-l20 text-r-green">Завтра</span>
-					</li>
-					<li class="box__price-buy">
-						<span class="title-T">72
-							<span class="text-r text-r-f16-l25">
-								грн.
-							</span>
-						</span>
-						<button class="btn" type="button" onclick="$('#exampleModal9').arcticmodal();">Купить</button>
-					</li>
-					<li class="box__price-geo">
-						<span class="text-r text-r-f14-l20">Отгрузим со склада в</span>
-						<button class="sity text-r text-r-f14-l20 text-r-blue"
-								onclick="$('#exampleModal6').arcticmodal();">
-							<i class="icon-geo"></i>
-							<span class="sity__text">Киеве</span>
-						</button>
-						<span class="text-r text-r-f14-l20 text-r-green">Завтра</span>
-					</li>
-					<li class="box__price-like">
-						<button class="box__price-like_btn" type="button" onclick="$('#exampleModal10').arcticmodal();">
-							<i class="icon-favorite"></i>
-							<span class="text-r text-r-f14-l20 text-r-greey">В список желаний</span>
-						</button>
-					</li>
-					<li class="box__price-compatibility">
-						<span class="text-r text-r-f14-l20">Фильтр масляный A210039 совместим со следующими
-							марками:</span>
-						<ul class="box-sort">
-							<li class="box-sort__item btn-dots" onclick="$('#exampleModal5').arcticmodal();">Ford</li>
-							<li class="box-sort__item btn-dots" onclick="$('#exampleModal5').arcticmodal();">Hyuinday
-							</li>
-							<li class="box-sort__item btn-dots" onclick="$('#exampleModal5').arcticmodal();">Isuzu</li>
-							<li class="box-sort__item btn-dots" onclick="$('#exampleModal5').arcticmodal();">Kia</li>
-							<li class="box-sort__item btn-dots" onclick="$('#exampleModal5').arcticmodal();">Mazda</li>
-							<li class="box-sort__item btn-dots" onclick="$('#exampleModal5').arcticmodal();">Mitsubishi
-							</li>
-							<li class="box-sort__item btn-dots" onclick="$('#exampleModal5').arcticmodal();">Opel</li>
-							<li class="box-sort__item btn-dots" onclick="$('#exampleModal5').arcticmodal();">Proton</li>
-							<li class="box-sort__item btn-dots" onclick="$('#exampleModal5').arcticmodal();">Smart</li>
-							<li class="box-sort__item btn-dots" onclick="$('#exampleModal5').arcticmodal();">Subaru</li>
-						</ul>
-					</li>
-				</ul>
+				@@include('_block-buy.html')
 			</div>
 			<div class="cart-product__box-2 delivery">
 				<div class="delivery-head">
@@ -420,6 +267,7 @@
 							</div>
 						</div>
 					</div>
+					@@include('_block-craft.html')
 				</div>
 				<div class="content-tabs">
 					<ul class="box-params">
@@ -790,107 +638,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<div class="tovar">
-			<h2 class="title-T">С этим товаром покупают</h2>
-			<ul class="tovar-coll">
-				<li class="tovar-coll__item">
-					<div class="tovar-coll__item-wrapper">
-						<a class="tovar-coll__item-wrapper__linkI" href="">
-							<figure>
-								<img src="./img/oil.min.png" alt="">
-								<figcaption>
-									Масло моторное GENERAL MOTORS (Дженерал Моторс) 5W-30 Dexos2 LongLife 5л 1942003
-								</figcaption>
-							</figure>
-						</a>
-						<a class="nameT text-r text-r-f14-l20" href="">Масло моторное GENERAL MOTORS (Дженерал Моторс)
-							5W-30
-							Dexos2
-							LongLife
-							5л 1942003</a>
-					</div>
-				</li>
-				<li class="tovar-coll__item">
-					<div class="tovar-coll__item-wrapper">
-						<a class="tovar-coll__item-wrapper__linkI" href="">
-							<figure>
-								<img src="./img/test-img2.jpg" alt="">
-								<figcaption>
-									Масло моторное GENERAL MOTORS (Дженерал Моторс) 5W-30 Dexos2 LongLife 5л 1942003
-								</figcaption>
-							</figure>
-						</a>
-						<a class="nameT text-r text-r-f14-l20" href="">Масло моторное GENERAL MOTORS (Дженерал Моторс)
-							5W-30
-							Dexos2
-							LongLife
-							5л 1942003</a>
-					</div>
-				</li>
-				<li class="tovar-coll__item">
-					<div class="tovar-coll__item-wrapper">
-						<a class="tovar-coll__item-wrapper__linkI" href="">
-							<figure>
-								<img src="./img/test-img.jpg" alt="">
-								<figcaption>
-									Масло моторное GENERAL MOTORS (Дженерал Моторс) 5W-30 Dexos2 LongLife 5л 1942003
-								</figcaption>
-							</figure>
-						</a>
-						<a class="nameT text-r text-r-f14-l20" href="">Масло моторное GENERAL MOTORS (Дженерал Моторс)
-							5W-30
-							Dexos2
-							LongLife
-							5л 1942003</a>
-					</div>
-				</li>
-				<li class="tovar-coll__item">
-					<div class="tovar-coll__item-wrapper">
-						<a class="tovar-coll__item-wrapper__linkI" href="">
-							<figure>
-								<img src="./img/oil.min.png" alt="">
-								<figcaption>
-									Масло моторное GENERAL MOTORS (Дженерал Моторс) 5W-30 Dexos2 LongLife 5л 1942003
-								</figcaption>
-							</figure>
-						</a>
-						<a class="nameT text-r text-r-f14-l20" href="">Масло моторное GENERAL MOTORS (Дженерал Моторс)
-							5W-30
-							Dexos2
-							LongLife
-							5л 1942003</a>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="bot-cont">
-		<div class="container">
-			<div class="bot-cont__text">
-				<p>Автоклад предлагает Вам купить масляный фильтр DENCKERMANN
-					A210039. Главным предназначением которого является устранение
-					таких нежелательных компонентов, как: сажа, нагар, конденсат, а также продукты истирания деталей
-					двигателя. В процессе
-					работы мотора, масло проходит через фильтр, неся с собой огромное количество мелких частиц
-					(указанных
-					выше). Такие
-					примеси негативно влияют на работу двигателя. Задерживая наименьшие из них, эта деталь защищает
-					двигатель от
-					преждевременного износа.</p>
-				<p>Высокое качество уплотнительных элементов, использованных
-					в
-					производстве фильтра, а также точно подогнанные
-					соединительные детали, обеспечивают надежное отделение загрязненного масла от очищенного.</p>
-				<p>Высокое качество уплотнительных элементов, использованных
-					в
-					производстве фильтра, а также точно подогнанные
-					соединительные детали, обеспечивают надежное отделение загрязненного масла от очищенного.</p>
-			</div>
-			<div class="bot-cont__btn">
-				<button class="full-btn text-r text-r-f16-l25 text-r-greey">Читать полностью</button>
-			</div>
-		</div>
-	</div>
+	@@include('_block-container-buy-withs.html')
+	@@include('_block-bot-cont.html')
 </main>
 @@include('_footer1.html')

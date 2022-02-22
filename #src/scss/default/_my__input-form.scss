@@ -23,10 +23,10 @@
 		color: $greey;
 	}
 	&:hover {
-		border: 1px solid $blue;
+		border-color: $blue;
 	}
 	&:focus {
-		border: 1px solid $blue;
+		border-color: $blue;
 	}
 	&-xxs {
 		width: 90px;
@@ -69,9 +69,9 @@
 		color: $greey;
 	}
 	&:hover {
-		border: 1px solid $blue;
+		border-color: $blue;
 	}
 	&:focus {
-		border: 1px solid $blue;
+		border-color: $blue;
 	}
 }

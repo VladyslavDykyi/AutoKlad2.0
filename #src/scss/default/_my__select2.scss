@@ -3,13 +3,13 @@
 	border: 1px solid $greey;
 	padding: 10px 20px 10px 10px;
 	height: 40px;
-	border-radius: 0px;
+	border-radius: 0;
 	transition: all 0.2s linear;
 	&:hover {
-		border: 1px solid $lite-blue;
+		border-color: $lite-blue;
 	}
 	&:focus {
-		border: 1px solid $lite-blue;
+		border-color: $lite-blue;
 	}
 }
 .select2-container--default .select2-selection--single .select2-selection__arrow {
