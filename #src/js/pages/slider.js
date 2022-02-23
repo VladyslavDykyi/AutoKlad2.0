@@ -1,7 +1,8 @@
 $(document).ready(function () {
 	/*--- слайдер на карточке товара ---*/
 	$('.tovar-for').slick({
-		autoplay: true,
+		infinite: false,
+		autoplay: false,
 		autoplaySpeed: 400000,
 		slidesToShow: 1,
 		slidesToScroll: 1,
